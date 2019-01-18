@@ -1,0 +1,521 @@
+
+
+================================================================
+== Vivado HLS Report for 'apint_arith'
+================================================================
+* Date:           Wed Jun 27 16:28:44 2018
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        proj_apint_arith
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      4.37|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   36|   36|   36|   36|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 37
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+
+* FSM state operations: 
+
+ <State 1> : 4.37ns
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%inD_read = call i33 @_ssdm_op_Read.ap_auto.i33(i33 %inD) nounwind"
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%inA_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %inA) nounwind"
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%tmp_s = sext i6 %inA_read to i33" [apint_arith.c:102]
+ST_1 : Operation 41 [37/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 2> : 4.37ns
+ST_2 : Operation 42 [36/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 3> : 4.37ns
+ST_3 : Operation 43 [35/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 4> : 4.37ns
+ST_4 : Operation 44 [34/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 5> : 4.37ns
+ST_5 : Operation 45 [33/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 6> : 4.37ns
+ST_6 : Operation 46 [32/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 7> : 4.37ns
+ST_7 : Operation 47 [31/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 8> : 4.37ns
+ST_8 : Operation 48 [30/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 9> : 4.37ns
+ST_9 : Operation 49 [29/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 10> : 4.37ns
+ST_10 : Operation 50 [28/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 11> : 4.37ns
+ST_11 : Operation 51 [27/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 12> : 4.37ns
+ST_12 : Operation 52 [1/1] (0.00ns)   --->   "%inC_read = call i22 @_ssdm_op_Read.ap_auto.i22(i22 %inC) nounwind"
+ST_12 : Operation 53 [1/1] (0.00ns)   --->   "%inB_read = call i12 @_ssdm_op_Read.ap_auto.i12(i12 %inB) nounwind"
+ST_12 : Operation 54 [1/1] (0.00ns)   --->   "%tmp = sext i6 %inA_read to i18" [apint_arith.c:99]
+ST_12 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_1 = sext i12 %inB_read to i18" [apint_arith.c:99]
+ST_12 : Operation 56 [3/3] (3.89ns)   --->   "%tmp_2 = mul i18 %tmp_1, %tmp" [apint_arith.c:99]   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_3 = sext i12 %inB_read to i13" [apint_arith.c:100]
+ST_12 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_4 = sext i6 %inA_read to i13" [apint_arith.c:100]
+ST_12 : Operation 59 [1/1] (1.99ns)   --->   "%tmp_5 = add i13 %tmp_3, %tmp_4" [apint_arith.c:100]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i13P(i13* %out2, i13 %tmp_5) nounwind" [apint_arith.c:100]
+ST_12 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_7_tr_cast = sext i6 %inA_read to i22" [apint_arith.c:101]
+ST_12 : Operation 62 [26/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 63 [26/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 13> : 4.37ns
+ST_13 : Operation 64 [2/3] (3.89ns)   --->   "%tmp_2 = mul i18 %tmp_1, %tmp" [apint_arith.c:99]   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 65 [25/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 66 [25/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 14> : 4.37ns
+ST_14 : Operation 67 [1/3] (0.00ns)   --->   "%tmp_2 = mul i18 %tmp_1, %tmp" [apint_arith.c:99]   --->   Core 61 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 68 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i18P(i18* %out1, i18 %tmp_2) nounwind" [apint_arith.c:99]
+ST_14 : Operation 69 [24/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 70 [24/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 15> : 4.37ns
+ST_15 : Operation 71 [23/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 72 [23/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 16> : 4.37ns
+ST_16 : Operation 73 [22/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 74 [22/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 17> : 4.37ns
+ST_17 : Operation 75 [21/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 76 [21/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 18> : 4.37ns
+ST_18 : Operation 77 [20/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 78 [20/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 19> : 4.37ns
+ST_19 : Operation 79 [19/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 80 [19/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 20> : 4.37ns
+ST_20 : Operation 81 [18/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 82 [18/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 21> : 4.37ns
+ST_21 : Operation 83 [17/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 84 [17/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 22> : 4.37ns
+ST_22 : Operation 85 [16/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 86 [16/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 23> : 4.37ns
+ST_23 : Operation 87 [15/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 88 [15/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 24> : 4.37ns
+ST_24 : Operation 89 [14/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 90 [14/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 25> : 4.37ns
+ST_25 : Operation 91 [13/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 92 [13/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 26> : 4.37ns
+ST_26 : Operation 93 [12/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 94 [12/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 27> : 4.37ns
+ST_27 : Operation 95 [11/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 96 [11/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 28> : 4.37ns
+ST_28 : Operation 97 [10/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 98 [10/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 29> : 4.37ns
+ST_29 : Operation 99 [9/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 100 [9/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 30> : 4.37ns
+ST_30 : Operation 101 [8/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 102 [8/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 31> : 4.37ns
+ST_31 : Operation 103 [7/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 104 [7/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 32> : 4.37ns
+ST_32 : Operation 105 [6/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 106 [6/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 33> : 4.37ns
+ST_33 : Operation 107 [5/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 108 [5/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 34> : 4.37ns
+ST_34 : Operation 109 [4/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 110 [4/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 35> : 4.37ns
+ST_35 : Operation 111 [3/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 112 [3/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 36> : 4.37ns
+ST_36 : Operation 113 [2/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 114 [2/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 37> : 4.37ns
+ST_37 : Operation 115 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6 %inA) nounwind, !map !7"
+ST_37 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12 %inB) nounwind, !map !13"
+ST_37 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i22 %inC) nounwind, !map !17"
+ST_37 : Operation 118 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i33 %inD) nounwind, !map !21"
+ST_37 : Operation 119 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18* %out1) nounwind, !map !25"
+ST_37 : Operation 120 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %out2) nounwind, !map !31"
+ST_37 : Operation 121 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i22* %out3) nounwind, !map !35"
+ST_37 : Operation 122 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %out4) nounwind, !map !39"
+ST_37 : Operation 123 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @apint_arith_str) nounwind"
+ST_37 : Operation 124 [1/26] (4.04ns)   --->   "%tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast" [apint_arith.c:101]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 125 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i22P(i22* %out3, i22 %tmp_6) nounwind" [apint_arith.c:101]
+ST_37 : Operation 126 [1/37] (4.36ns)   --->   "%tmp_7 = srem i33 %inD_read, %tmp_s" [apint_arith.c:102]   --->   Core 23 'DivnS' <Latency = 36> <II = 1> <Delay = 4.36> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 127 [1/1] (0.00ns)   --->   "%tmp_8 = trunc i33 %tmp_7 to i6" [apint_arith.c:102]
+ST_37 : Operation 128 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i6P(i6* %out4, i6 %tmp_8) nounwind" [apint_arith.c:102]
+ST_37 : Operation 129 [1/1] (0.00ns)   --->   "ret void" [apint_arith.c:104]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 4.37ns
+The critical path consists of the following:
+	wire read on port 'inD' [18]  (0 ns)
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 2>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 3>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 4>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 5>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 6>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 7>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 8>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 9>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 10>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 11>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 12>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 13>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 14>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 15>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 16>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 17>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 18>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 19>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 20>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 21>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 22>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 23>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 24>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 25>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 26>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 27>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 28>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 29>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 30>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 31>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 32>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 33>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 34>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 35>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 36>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+ <State 37>: 4.37ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (4.37 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

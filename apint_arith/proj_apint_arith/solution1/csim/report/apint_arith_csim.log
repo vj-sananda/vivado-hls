@@ -1,0 +1,26 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../apint_arith_test.c in debug mode
+INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Thu Jun 28 16:08:40 -0500 2018
+INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/csim/build'
+../../../../apint_arith_test.c:122:49: warning: format specifies type 'long long' but the argument has type 'dinD_t' (aka 'int33') [-Wformat]
+                fprintf(fp, "%d*%d=%d; %d+%d=%d; %d/%d=%d; %lld mod %d=%d;\n", inA, inB, out1, inB, inA, out2, inC, inA, out3, inD, inA,out4);
+                                                           ~~~^                                                                ~~~
+1 warning generated.
+../../../../apint_arith_test.c:122:49: warning: format specifies type 'long long' but the argument has type 'dinD_t' (aka 'int33') [-Wformat]
+                fprintf(fp, "%d*%d=%d; %d+%d=%d; %d/%d=%d; %lld mod %d=%d;\n", inA, inB, out1, inB, inA, out2, inC, inA, out3, inD, inA,out4);
+                                                           ~~~^                                                                ~~~
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../apint_arith.c in debug mode
+INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Thu Jun 28 16:08:44 -0500 2018
+INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Test passed !
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,17 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="10" filename="fir_2ch_int.cpp" linenumber="139" name="tmp" contextFuncName="dummy_fe" moduleName="dummy_fe" rtlName="tmp_fu_65_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+<item  id="12" filename="fir_2ch_int.cpp" linenumber="139" name="i_2" contextFuncName="dummy_fe" moduleName="dummy_fe" rtlName="i_2_fu_71_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="19" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+</annotationInfo>
+<annotationInfo>
+<item  id="5" filename="fir_2ch_int.cpp" linenumber="164" name="" contextFuncName="fir_top" moduleName="__fir_2ch_int.cpp_li" rtlName="grp_run_fu_18" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+</annotationInfo>
+<annotationInfo>
+<item  id="10" filename="fir_2ch_int.cpp" linenumber="148" name="tmp" contextFuncName="dummy_be" moduleName="dummy_be" rtlName="tmp_fu_66_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+<item  id="12" filename="fir_2ch_int.cpp" linenumber="148" name="i_3" contextFuncName="dummy_be" moduleName="dummy_be" rtlName="i_3_fu_72_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="19" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+</annotationInfo>
+<annotationInfo>
+<item  id="21" filename="fir_2ch_int.cpp" linenumber="163" name="" contextFuncName="fir_top" moduleName="fir_top" rtlName="dummy_fe_U0" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+<item  id="27" filename="fir_2ch_int.cpp" linenumber="165" name="" contextFuncName="fir_top" moduleName="fir_top" rtlName="dummy_be_U0" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\vsananda\work\fir_2ch_int"></item>
+</annotationInfo>
+</annotationInfo>

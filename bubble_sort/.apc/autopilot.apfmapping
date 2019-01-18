@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sort.c" path="C:\Users\vsananda\work\bubble_sort\sort.c"/>
+    <originFiles name="sort_config.h" path="C:\Users\vsananda\work\bubble_sort\sort_config.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_sort.c" path="C:\Users\vsananda\work\bubble_sort\test_sort.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database loop_pipeline.wdb

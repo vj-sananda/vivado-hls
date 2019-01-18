@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="apint_arith.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_apint_arith_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1462000001fs"></ZoomEndTime>
+      <Cursor1Time time="798306000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">out4(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out4_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out4_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out4_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out4" type="array">
+               <obj_property name="ElementShortName">out4[5:0]</obj_property>
+               <obj_property name="ObjectShortName">out4[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group6" type="group">
+            <obj_property name="label">out3(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out3_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out3_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out3_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out3" type="array">
+               <obj_property name="ElementShortName">out3[21:0]</obj_property>
+               <obj_property name="ObjectShortName">out3[21:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group9" type="group">
+            <obj_property name="label">out2(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out2_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out2_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out2_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out2" type="array">
+               <obj_property name="ElementShortName">out2[12:0]</obj_property>
+               <obj_property name="ObjectShortName">out2[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group12" type="group">
+            <obj_property name="label">out1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out1_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/out1" type="array">
+               <obj_property name="ElementShortName">out1[17:0]</obj_property>
+               <obj_property name="ObjectShortName">out1[17:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group15" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group16" type="group">
+            <obj_property name="label">inD(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/inD" type="array">
+               <obj_property name="ElementShortName">inD[32:0]</obj_property>
+               <obj_property name="ObjectShortName">inD[32:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group18" type="group">
+            <obj_property name="label">inC(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/inC" type="array">
+               <obj_property name="ElementShortName">inC[21:0]</obj_property>
+               <obj_property name="ObjectShortName">inC[21:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group20" type="group">
+            <obj_property name="label">inB(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/inB" type="array">
+               <obj_property name="ElementShortName">inB[11:0]</obj_property>
+               <obj_property name="ObjectShortName">inB[11:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group22" type="group">
+            <obj_property name="label">inA(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/inA" type="array">
+               <obj_property name="ElementShortName">inA[5:0]</obj_property>
+               <obj_property name="ObjectShortName">inA[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group24" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group29" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/ap_rst" type="logic">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group31" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group33" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group34" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group35" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/AUTOTB_TRANSACTION_NUM" type="array">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group36" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_inA" type="array">
+               <obj_property name="ElementShortName">LENGTH_inA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_inA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_inB" type="array">
+               <obj_property name="ElementShortName">LENGTH_inB[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_inB[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_inC" type="array">
+               <obj_property name="ElementShortName">LENGTH_inC[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_inC[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_inD" type="array">
+               <obj_property name="ElementShortName">LENGTH_inD[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_inD[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_out1" type="array">
+               <obj_property name="ElementShortName">LENGTH_out1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_out2" type="array">
+               <obj_property name="ElementShortName">LENGTH_out2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_out3" type="array">
+               <obj_property name="ElementShortName">LENGTH_out3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/LENGTH_out4" type="array">
+               <obj_property name="ElementShortName">LENGTH_out4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group48" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group49" type="group">
+            <obj_property name="label">out4(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/out4_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out4_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out4_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/out4" type="array">
+               <obj_property name="ElementShortName">out4[5:0]</obj_property>
+               <obj_property name="ObjectShortName">out4[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group52" type="group">
+            <obj_property name="label">out3(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/out3_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out3_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out3_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/out3" type="array">
+               <obj_property name="ElementShortName">out3[21:0]</obj_property>
+               <obj_property name="ObjectShortName">out3[21:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group55" type="group">
+            <obj_property name="label">out2(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/out2_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out2_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out2_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/out2" type="array">
+               <obj_property name="ElementShortName">out2[12:0]</obj_property>
+               <obj_property name="ObjectShortName">out2[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group58" type="group">
+            <obj_property name="label">out1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/out1_ap_vld" type="logic">
+               <obj_property name="ElementShortName">out1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">out1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_apint_arith_top/out1" type="array">
+               <obj_property name="ElementShortName">out1[17:0]</obj_property>
+               <obj_property name="ObjectShortName">out1[17:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group61" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group62" type="group">
+            <obj_property name="label">inD(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/inD" type="array">
+               <obj_property name="ElementShortName">inD[32:0]</obj_property>
+               <obj_property name="ObjectShortName">inD[32:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group64" type="group">
+            <obj_property name="label">inC(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/inC" type="array">
+               <obj_property name="ElementShortName">inC[21:0]</obj_property>
+               <obj_property name="ObjectShortName">inC[21:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group66" type="group">
+            <obj_property name="label">inB(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/inB" type="array">
+               <obj_property name="ElementShortName">inB[11:0]</obj_property>
+               <obj_property name="ObjectShortName">inB[11:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group68" type="group">
+            <obj_property name="label">inA(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_apint_arith_top/inA" type="array">
+               <obj_property name="ElementShortName">inA[5:0]</obj_property>
+               <obj_property name="ObjectShortName">inA[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/ap_clk" type="logic">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/apatb_apint_arith_top/ap_done" type="logic">
+      <obj_property name="ElementShortName">ap_done</obj_property>
+      <obj_property name="ObjectShortName">ap_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/apatb_apint_arith_top/AESL_inst_apint_arith/apint_arith_sdiv_cud_U2/apint_arith_sdiv_cud_div_U/sign_o" type="array">
+      <obj_property name="ElementShortName">sign_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sign_o[1:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir'
+================================================================
+* Date:           Fri Jul  6 16:01:55 2018
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        fir
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.51|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   17|   17|   17|   17|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   16|   16|         4|          -|          -|     4|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	2  / true
+
+* FSM state operations: 
+
+ <State 1> : 1.77ns
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %input_r) nounwind, !map !7"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_r) nounwind, !map !13"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([4 x i32]* %taps) nounwind, !map !19"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @fir_str) nounwind"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%input_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %input_r) nounwind"
+ST_1 : Operation 11 [1/1] (1.76ns)   --->   "br label %1" [fir/fir.c:17]
+
+ <State 2> : 2.33ns
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%i_1 = phi i3 [ 0, %0 ], [ %i, %2 ]"
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%result = phi i32 [ 0, %0 ], [ %result_1, %2 ]"
+ST_2 : Operation 14 [1/1] (1.13ns)   --->   "%exitcond = icmp eq i3 %i_1, -4" [fir/fir.c:17]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"
+ST_2 : Operation 16 [1/1] (1.65ns)   --->   "%i = add i3 %i_1, 1" [fir/fir.c:17]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [fir/fir.c:17]
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_4 = zext i3 %i_1 to i64" [fir/fir.c:19]
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp = trunc i3 %i_1 to i2" [fir/fir.c:17]
+ST_2 : Operation 20 [1/1] (0.95ns)   --->   "%sel_tmp_i = icmp eq i2 %tmp, 0" [fir/fir.c:17]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.95ns)   --->   "%sel_tmp2_i = icmp eq i2 %tmp, 1" [fir/fir.c:17]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.95ns)   --->   "%sel_tmp4_i = icmp eq i2 %tmp, -2" [fir/fir.c:17]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node newSel3)   --->   "%or_cond = or i1 %sel_tmp4_i, %sel_tmp2_i" [fir/fir.c:17]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node newSel3)   --->   "%newSel1 = select i1 %sel_tmp_i, i32 %input_read, i32 0" [fir/fir.c:17]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (1.37ns) (out node of the LUT)   --->   "%newSel3 = select i1 %or_cond, i32 0, i32 %newSel1" [fir/fir.c:17]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%taps_addr = getelementptr [4 x i32]* %taps, i64 0, i64 %tmp_4" [fir/fir.c:19]
+ST_2 : Operation 27 [2/2] (2.32ns)   --->   "%taps_load = load i32* %taps_addr, align 4" [fir/fir.c:19]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %output_r, i32 %result) nounwind" [fir/fir.c:22]
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [fir/fir.c:23]
+
+ <State 3> : 2.32ns
+ST_3 : Operation 30 [1/2] (2.32ns)   --->   "%taps_load = load i32* %taps_addr, align 4" [fir/fir.c:19]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4> <RAM>
+
+ <State 4> : 8.51ns
+ST_4 : Operation 31 [1/1] (8.51ns)   --->   "%tmp_5 = mul nsw i32 %taps_load, %newSel3" [fir/fir.c:19]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 5> : 2.55ns
+ST_5 : Operation 32 [1/1] (2.55ns)   --->   "%result_1 = add nsw i32 %tmp_5, %result" [fir/fir.c:19]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "br label %1" [fir/fir.c:17]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', fir/fir.c:17) [11]  (1.77 ns)
+
+ <State 2>: 2.33ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', fir/fir.c:17) [11]  (0 ns)
+	'icmp' operation ('sel_tmp2_i', fir/fir.c:17) [21]  (0.959 ns)
+	'or' operation ('or_cond', fir/fir.c:17) [23]  (0 ns)
+	'select' operation ('newSel3', fir/fir.c:17) [25]  (1.37 ns)
+
+ <State 3>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('taps_load', fir/fir.c:19) on array 'taps' [27]  (2.32 ns)
+
+ <State 4>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('tmp_5', fir/fir.c:19) [28]  (8.51 ns)
+
+ <State 5>: 2.55ns
+The critical path consists of the following:
+	'add' operation ('result', fir/fir.c:19) [29]  (2.55 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

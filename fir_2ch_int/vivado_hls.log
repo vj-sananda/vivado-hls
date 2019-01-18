@@ -1,0 +1,140 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Wed Jun 27 16:18:25 -0500 2018
+INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/fir_2ch_int'
+INFO: [HLS 200-10] Opening project 'C:/Users/vsananda/work/fir_2ch_int/proj'.
+INFO: [HLS 200-10] Adding design file 'fir_2ch_int.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'fir_2ch_int_dout_q_cmodel.txt' to the project
+INFO: [HLS 200-10] Adding test bench file 'fir_2ch_int_dout_i_cmodel.txt' to the project
+INFO: [HLS 200-10] Adding test bench file 'fir_2ch_int_din_q.txt' to the project
+INFO: [HLS 200-10] Adding test bench file 'fir_2ch_int_din_i.txt' to the project
+INFO: [HLS 200-10] Adding test bench file 'fir_2ch_int_tb.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/vsananda/work/fir_2ch_int/proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z030sbv485-3'
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 1.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 1.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [HLS 200-10] Analyzing design file 'fir_2ch_int.cpp' ...
+WARNING: [HLS 200-40] In file included from fir_2ch_int.cpp:1:
+In file included from fir_2ch_int.cpp:92:
+In file included from ./fir_2ch_int.h:94:
+C:/Xilinx/Vivado/2017.4/common/technology/autopilot\hls_fir.h:174:25: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]
+    static const double sample_frequency = 0.001;
+                        ^                  ~~~~~
+1 warning generated.
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 101.445 ; gain = 45.406
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 101.445 ; gain = 45.406
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 106.785 ; gain = 50.746
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 111.707 ; gain = 55.668
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'fir_in': cannot find another array to be merged with.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'fir_out': cannot find another array to be merged with.
+WARNING: [XFORM 203-713] All the elements of global array 'fir_out' should be updated in process function '__fir_2ch_int.cpp_line164_proc' (fir_2ch_int.cpp:164:5), otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'fir_top' (fir_2ch_int.cpp:155), detected/extracted 3 process function(s): 
+	 'dummy_fe'
+	 '__fir_2ch_int.cpp_line164_proc'
+	 'dummy_be'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 137.914 ; gain = 81.875
+WARNING: [XFORM 203-631] Renaming function 'hls::FIR<my_params>::run' to 'run' (C:/Xilinx/Vivado/2017.4/common/technology/autopilot\hls_fir.h:580)
+WARNING: [XFORM 203-631] Renaming function '__fir_2ch_int.cpp_line164_proc' to '__fir_2ch_int.cpp_li' (fir_2ch_int.cpp:164:5)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 167.582 ; gain = 111.543
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_top' ...
+WARNING: [SYN 201-103] Legalizing function name '__fir_2ch_int.cpp_li' to 'p_fir_2ch_int_cpp_li'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dummy_fe'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 21.1 seconds; current allocated memory: 126.778 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.045 seconds; current allocated memory: 126.869 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Skip scheduling the IP block.
+INFO: [HLS 200-111]  Elapsed time: 0.094 seconds; current allocated memory: 129.214 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.026 seconds; current allocated memory: 129.224 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_fir_2ch_int_cpp_li'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.026 seconds; current allocated memory: 129.302 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.032 seconds; current allocated memory: 129.339 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dummy_be'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.217 seconds; current allocated memory: 129.427 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.032 seconds; current allocated memory: 129.497 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_top'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.045 seconds; current allocated memory: 129.547 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.053 seconds; current allocated memory: 129.665 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dummy_fe'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dummy_fe'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 129.792 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run'.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 129.945 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_fir_2ch_int_cpp_li'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_fir_2ch_int_cpp_li'.
+INFO: [HLS 200-111]  Elapsed time: 0.052 seconds; current allocated memory: 130.120 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dummy_be'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dummy_be'.
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 130.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_top'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/din_i_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/din_q_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/dout_i_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/dout_q_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_top'.
+INFO: [HLS 200-111]  Elapsed time: 0.095 seconds; current allocated memory: 130.504 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 178.770 ; gain = 122.730
+INFO: [SYSC 207-301] Generating SystemC RTL for fir_top.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_top.
+INFO: [HLS 200-112] Total elapsed time: 23.041 seconds; peak allocated memory: 130.504 MB.

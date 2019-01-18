@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/AESL_automem_A.v,1530307366,systemVerilog,,,,AESL_automem_A,C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline.autotb.v,1530307366,systemVerilog,,,,apatb_loop_pipeline_top,C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline.v,1530307336,systemVerilog,,,,loop_pipeline,C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline_macbkb.v,1530307336,systemVerilog,,,,loop_pipeline_macbkb;loop_pipeline_macbkb_DSP48_0,C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,

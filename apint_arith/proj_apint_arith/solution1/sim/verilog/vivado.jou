@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun 28 15:09:15 2018
+# Process ID: 3856
+# Current directory: C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/sim/verilog/vivado.log
+# Journal file: C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/sim/verilog/apint_arith.wcfg
+add_wave {{/apatb_apint_arith_top/AESL_inst_apint_arith/apint_arith_sdiv_cud_U2/apint_arith_sdiv_cud_div_U/sign_o}} 
+save_wave_config {C:/Users/vsananda/work/apint_arith/proj_apint_arith/solution1/sim/verilog/apint_arith.wcfg}
+close_sim

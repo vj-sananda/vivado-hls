@@ -1,0 +1,22 @@
+digraph ap_test {
+	graph [splines=ortho, rankdir=BT, size="500, 500"];
+	node [label="\N"];
+	graph [bb="0,0,192,612"];
+	1 [shape=box, fixedsize=true, width=1, height="0.25", pos="51,9"];
+	2 [shape=box, fixedsize=true, width=1, height="0.25", pos="141,9"];
+	3 [shape=box, fixedsize=true, width=1, height="0.25", pos="51,603"];
+	4 [shape=box, fixedsize=true, width=1, height="0.25", pos="141,603"];
+	21 [shape=box, fixedsize=true, width="1.75", height=2, pos="96,126"];
+	24 [shape=box, fixedsize=true, width="2.6806", height=2, pos="96,306"];
+	27 [shape=box, fixedsize=true, width="1.75", height=2, pos="96,486"];
+	1 -> 21 [pos="e,60,53.744 60,18.181 60,18.181 60,43.744 60,43.744"];
+	2 -> 21 [pos="e,132,53.744 132,18.181 132,18.181 132,43.744 132,43.744"];
+	27 -> 3 [pos="e,60,593.87 60,558.1 60,558.1 60,583.87 60,583.87"];
+	27 -> 4 [pos="e,132,593.87 132,558.1 132,558.1 132,583.87 132,583.87"];
+	21 -> 24 [pos="e,96,233.81 96,198.18 96,198.18 96,223.81 96,223.81"];
+	24 -> 27 [pos="e,96,413.81 96,378.18 96,378.18 96,403.81 96,403.81"];
+}
+Warning: node '1', graph 'ap_test' size too small for label
+Warning: node '2', graph 'ap_test' size too small for label
+Warning: node '3', graph 'ap_test' size too small for label
+Warning: node '4', graph 'ap_test' size too small for label

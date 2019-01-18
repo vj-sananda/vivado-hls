@@ -1,0 +1,1154 @@
+INFO: [HLS 200-0] Workspace C:/Users/vsananda/work/fir_2ch_int/proj/solution1 opened at Wed Jun 27 16:18:25 -0500 2018
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Command     config_clock returned 0; 0.001 sec.
+Execute     open_platform DefaultPlatform 
+Command     open_platform returned 0; 0 sec.
+Execute     import_lib C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/plb46.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/fsl.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/axi4.lib 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.lib 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfft.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.lib 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.005 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_old.lib 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_vivado.lib 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.005 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command       ap_source returned 0; 0.001 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Command       config_chip_info returned 0; 0 sec.
+Execute       config_chip_info -quiet -speed medium 
+Command       config_chip_info returned 0; 0 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.005 sec.
+Command     import_lib returned 0; 0.025 sec.
+Execute     source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.008 sec.
+Command           ap_source returned 0; 0.013 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.013 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.004 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.122 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.168 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.171 sec.
+Command     ap_source returned 0; 0.171 sec.
+Execute     set_part xc7z030sbv485-3 
+Execute       add_library xilinx/zynq/zynq:xc7z030:sbv485:-3 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         license_isbetapart xc7z030 
+Command         license_isbetapart returned 1; 0.02 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         config_chip_info -quiet -resource  {SLICE 19650}  {LUT 78600}     {FF 157200} {DSP48E 400}   {BRAM 530}  
+Command         config_chip_info returned 0; 0 sec.
+Execute         config_chip_info -quiet -speed fast 
+Command         config_chip_info returned 0; 0.001 sec.
+Command       add_library returned 0; 0.024 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         open_platform DefaultPlatform 
+Command         open_platform returned 0; 0 sec.
+Execute         import_lib C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_hp.lib 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.005 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command               ap_source returned 0; 0.002 sec.
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command                 ap_source returned 0; 0.001 sec.
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.006 sec.
+Command           ap_source returned 0; 0.006 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command           ap_source returned 0; 0.005 sec.
+Command         import_lib returned 0; 0.034 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command           ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0.002 sec.
+Command       add_library returned 0; 0.044 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z030sbv485-3'
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Command     set_part returned 0; 0.116 sec.
+Execute     get_default_platform 
+Command     get_default_platform returned 0; 0 sec.
+Execute     config_chip_info -quiet -resource  {SLICE 19650}  {LUT 78600}     {FF 157200} {DSP48E 400}   {BRAM 530}  
+Command     config_chip_info returned 0; 0 sec.
+Execute     config_chip_info -quiet -speed fast 
+Command     config_chip_info returned 0; 0 sec.
+Execute     config_dataflow -default_channel=fifo -fifo_depth=1 
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 1.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+Command     config_dataflow returned 0; 0.003 sec.
+Command   open_solution returned 0; 0.333 sec.
+Execute   set_part xc7z030sbv485-3 
+Execute     add_library xilinx/zynq/zynq:xc7z030:sbv485:-3 
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       license_isbetapart xc7z030 
+Command       license_isbetapart returned 1; 0 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       config_chip_info -quiet -resource  {SLICE 19650}  {LUT 78600}     {FF 157200} {DSP48E 400}   {BRAM 530}  
+Command       config_chip_info returned 0; 0 sec.
+Execute       config_chip_info -quiet -speed fast 
+Command       config_chip_info returned 0; 0 sec.
+Command     add_library returned 0; 0.003 sec.
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       open_platform DefaultPlatform 
+Command       open_platform returned 0; 0 sec.
+Execute       import_lib C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_hp.lib 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.004 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.005 sec.
+Command         ap_source returned 0; 0.006 sec.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command         ap_source returned 0; 0.003 sec.
+Command       import_lib returned 0; 0.024 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.003 sec.
+Command     add_library returned 0; 0.029 sec.
+Execute     get_default_platform 
+Command     get_default_platform returned 0; 0 sec.
+Command   set_part returned 0; 0.076 sec.
+Execute   create_clock -period 4 -name default 
+Command   create_clock returned 0; 0.002 sec.
+Execute   config_dataflow -default_channel fifo -fifo_depth 1 
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 1.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+Command   config_dataflow returned 0; 0.002 sec.
+Execute   source ./proj/solution1/directives.tcl 
+Execute     set_directive_interface -mode ap_fifo fir_top din_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_i 
+Command     set_directive_interface returned 0; 0.003 sec.
+Execute     set_directive_interface -mode ap_fifo fir_top din_q 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_q 
+Command     set_directive_interface returned 0; 0.003 sec.
+Execute     set_directive_interface -mode ap_fifo fir_top dout_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_q 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_i 
+Command     set_directive_interface returned 0; 0.003 sec.
+Execute     set_directive_interface -mode ap_fifo fir_top dout_q 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_q 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_q 
+Command     set_directive_interface returned 0; 0.003 sec.
+Execute     set_directive_dataflow fir_top 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_q 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_q 
+INFO: [HLS 200-0] Setting directive 'DATAFLOW' 
+Command     set_directive_dataflow returned 0; 0.003 sec.
+Command   ap_source returned 0; 0.015 sec.
+Execute   csynth_design 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -VP9_rom_infer_simplify=0 -ng=0 -g=0 -opt_fp=0 -enable_clang39=0 
+INFO: [HLS 200-10] Analyzing design file 'fir_2ch_int.cpp' ...
+INFO: [HLS 200-0] Compiling one TU...
+Execute       is_m_axi_addr64 
+Command       is_m_axi_addr64 returned 0; 0 sec.
+INFO: [HLS 200-0] Handling fir_2ch_int.cpp as C++
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       is_encrypted fir_2ch_int.cpp 
+Command       is_encrypted returned 0; 0 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+INFO: [HLS 200-0] Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2017.4/msys" -hls  -fno-exceptions  -D__llvm__  -E "fir_2ch_int.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot" -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp" 
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2017.4/msys -hls -fno-exceptions -D__llvm__ -E fir_2ch_int.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp
+Command       clang returned 0; 0.884 sec.
+INFO: [HLS 200-0] Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2017.4/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot" -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp"  -o "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/useless.bc"  
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2017.4/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from fir_2ch_int.cpp:1:
+In file included from fir_2ch_int.cpp:92:
+In file included from ./fir_2ch_int.h:94:
+C:/Xilinx/Vivado/2017.4/common/technology/autopilot\hls_fir.h:174:25: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]
+    static const double sample_frequency = 0.001;
+                        ^                  ~~~~~
+1 warning generated.
+Command       clang returned 0; 1.488 sec.
+INFO: [HLS 200-0] GCC PP time: 2 seconds per iteration
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddin_q 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_i 
+INFO: [HLS 200-0] Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddout_q 
+INFO: [HLS 200-0] Setting directive 'DATAFLOW' 
+Execute       list_core -type functional_unit 
+Command       list_core returned 0; 0 sec.
+INFO: [HLS 200-0] CDT Preprocessing...
+INFO: [HLS 200-0] Marker-Pragma convertor: C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp.ap-line.cpp C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp.ap-line.cpp.CXX 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+Execute       cdt  "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp.ap-line.cpp"  -m "fir_top" -o "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp.ap-cdt.cpp" --pp --directive C:/Users/vsananda/work/fir_2ch_int/proj/solution1/solution1.directive --source C:/Users/vsananda/work/fir_2ch_int/fir_2ch_int.cpp --error C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Double_Pump_Mac16 DSP_Double_Pump_Mac8 DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db --ca --es --gf --pd --p2d C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db --sd --scff C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/.systemc_flag --ad 
+Command       cdt returned 0; 9.104 sec.
+INFO: [HLS 200-0] Marker-Pragma convertor: C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pp.0.cpp.ap-cdt.cpp C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.0.cpp C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.0.cpp.ap-line.CXX 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/pragma.status.tcl 
+Command       ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-0] Pragma Handling...
+INFO: [HLS 200-0] Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2017.4/msys" -hls  -fno-exceptions  -D__llvm__  -E "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot" -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.2.cpp" 
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2017.4/msys -hls -fno-exceptions -D__llvm__ -E C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.2.cpp
+Command       clang returned 0; 0.656 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+INFO: [HLS 200-0] Processing labels
+Execute       clang  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2017.4/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot" -I "C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.g.bc" 
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2017.4/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot -I C:/Xilinx/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.g.bc
+Command       clang returned 0; 1.418 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/ve_warning.tcl 
+Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-10] Validating synthesis directives ...
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/pragma.status.tcl 
+Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 101.445 ; gain = 45.406
+INFO: [HLS 200-0] Linking Release ...
+Execute       llvm-ld C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.bc -hls-opt -except-internalize fir_top -LC:/Xilinx/Vivado/2017.4/win64/lib -lm_basic -lhlsmc++ -lhlsm -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o 
+Command       llvm-ld returned 0; 1.037 sec.
+Execute       disassemble C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o 
+Execute         is_encrypted C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.bc 
+Command         is_encrypted returned 0; 0.001 sec.
+Command       disassemble returned 0; 0.454 sec.
+INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
+INFO: [HLS 200-0] Linking Debug ...
+Execute       llvm-ld C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_2ch_int.g.bc -hls-opt -except-internalize fir_top -LC:/Xilinx/Vivado/2017.4/win64/lib -lm_basic -lhlsmc++ -lhlsm -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g 
+Command       llvm-ld returned 0; 0.472 sec.
+INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 101.445 ; gain = 45.406
+Execute       ::config_rtl 
+Command       config_rtl returned 0; 0 sec.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 -enable_clang39=0 -VP9_rom_infer_simplify=0 
+Execute         cleanup_all_models 
+Command         cleanup_all_models returned 0; 0 sec.
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.pp.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform returned 0; 0.113 sec.
+Execute         llvm-ld C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2017.4/win64/lib -lfloatconversion -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld returned 0; 0.37 sec.
+INFO: [HLS 200-0] Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top fir_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.0.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform returned 0; 0.101 sec.
+Execute         disassemble C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.1 C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.1 
+Execute           is_encrypted C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.1.bc 
+Command           is_encrypted returned 0; 0.001 sec.
+Command         disassemble returned 0; 0.449 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 106.785 ; gain = 50.746
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-0] Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.1.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform returned 0; 0.135 sec.
+INFO: [HLS 200-0] Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform returned 0; 0.029 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 111.707 ; gain = 55.668
+INFO: [HLS 200-0] Compiler optimizing ...
+INFO: [HLS 200-0] Share syncheck's 1.bc for syn flow: copy C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.g.1.bc to C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.1.bc
+INFO: [HLS 200-0] Presyn 1...
+Execute         transform -hls -tmp C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -simplifycfg -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.1.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'fir_in': cannot find another array to be merged with.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'fir_out': cannot find another array to be merged with.
+WARNING: [XFORM 203-713] All the elements of global array 'fir_out' should be updated in process function '__fir_2ch_int.cpp_line164_proc' (fir_2ch_int.cpp:164:5), otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'fir_top' (fir_2ch_int.cpp:155), detected/extracted 3 process function(s): 
+	 'dummy_fe'
+	 '__fir_2ch_int.cpp_line164_proc'
+	 'dummy_be'.
+Command         transform returned 0; 0.347 sec.
+INFO: [HLS 200-0] Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform returned 0; 0.22 sec.
+Execute         disassemble C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.2 C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.2 
+Execute           is_encrypted C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.2.bc 
+Command           is_encrypted returned 0; 0.001 sec.
+Command         disassemble returned 0; 0.428 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 137.914 ; gain = 81.875
+INFO: [HLS 200-0] Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -interface-preproc -directive-preproc -interface-gen -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -read-loop-dep -dce -bitwidth -loop-dep -check-stream -norm-name -legalize -validate-dataflow -cdfg-build C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.2.bc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::FIR<my_params>::run' to 'run' (C:/Xilinx/Vivado/2017.4/common/technology/autopilot\hls_fir.h:580)
+WARNING: [XFORM 203-631] Renaming function '__fir_2ch_int.cpp_line164_proc' to '__fir_2ch_int.cpp_li' (fir_2ch_int.cpp:164:5)
+Command         transform returned 0; 0.336 sec.
+Execute         disassemble C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.3 C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.3 
+Execute           is_encrypted C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.o.3.bc 
+Command           is_encrypted returned 0; 0 sec.
+Command         disassemble returned 0; 0.401 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 167.582 ; gain = 111.543
+INFO: [HLS 200-0] Finish building internal data model.
+Command       opt_and_import_c returned 0; 2.964 sec.
+Command     elaborate returned 0; 19.834 sec.
+Execute     autosyn 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-0] Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'fir_top' ...
+Execute       ap_set_top_model fir_top 
+WARNING: [SYN 201-103] Legalizing function name '__fir_2ch_int.cpp_li' to 'p_fir_2ch_int_cpp_li'.
+Command       ap_set_top_model returned 0; 0.003 sec.
+Execute       get_model_list fir_top -filter all-wo-channel -topdown 
+Command       get_model_list returned 0; 0 sec.
+Execute       preproc_iomode -model fir_top 
+Command       preproc_iomode returned 0; 0.001 sec.
+Execute       preproc_iomode -model dummy_be 
+Command       preproc_iomode returned 0; 0.001 sec.
+Execute       preproc_iomode -model __fir_2ch_int.cpp_li 
+Command       preproc_iomode returned 0; 0 sec.
+Execute       preproc_iomode -model run 
+Command       preproc_iomode returned 0; 0 sec.
+Execute       preproc_iomode -model dummy_fe 
+Command       preproc_iomode returned 0; 0 sec.
+Execute       get_model_list fir_top -filter all-wo-channel 
+Command       get_model_list returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for configure: dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top
+INFO: [HLS 200-0] Configuring Module : dummy_fe ...
+Execute       set_default_model dummy_fe 
+Command       set_default_model returned 0; 0 sec.
+Execute       apply_spec_resource_limit dummy_fe 
+Command       apply_spec_resource_limit returned 0; 0 sec.
+INFO: [HLS 200-0] Configuring Module : run ...
+Execute       set_default_model run 
+Command       set_default_model returned 0; 0 sec.
+Execute       apply_spec_resource_limit run 
+Command       apply_spec_resource_limit returned 0; 0 sec.
+INFO: [HLS 200-0] Configuring Module : __fir_2ch_int.cpp_li ...
+Execute       set_default_model __fir_2ch_int.cpp_li 
+Command       set_default_model returned 0; 0 sec.
+Execute       apply_spec_resource_limit __fir_2ch_int.cpp_li 
+Command       apply_spec_resource_limit returned 0; 0 sec.
+INFO: [HLS 200-0] Configuring Module : dummy_be ...
+Execute       set_default_model dummy_be 
+Command       set_default_model returned 0; 0 sec.
+Execute       apply_spec_resource_limit dummy_be 
+Command       apply_spec_resource_limit returned 0; 0 sec.
+INFO: [HLS 200-0] Configuring Module : fir_top ...
+Execute       set_default_model fir_top 
+Command       set_default_model returned 0; 0 sec.
+Execute       apply_spec_resource_limit fir_top 
+Command       apply_spec_resource_limit returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for preprocess: dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top
+INFO: [HLS 200-0] Preprocessing Module: dummy_fe ...
+Execute       set_default_model dummy_fe 
+Command       set_default_model returned 0; 0 sec.
+Execute       cdfg_preprocess -model dummy_fe 
+Command       cdfg_preprocess returned 0; 0.001 sec.
+Execute       rtl_gen_preprocess dummy_fe 
+Command       rtl_gen_preprocess returned 0; 0 sec.
+INFO: [HLS 200-0] Preprocessing Module: run ...
+Execute       set_default_model run 
+Command       set_default_model returned 0; 0 sec.
+Execute       cdfg_preprocess -model run 
+Command       cdfg_preprocess returned 0; 0.001 sec.
+Execute       rtl_gen_preprocess run 
+Command       rtl_gen_preprocess returned 0; 0.001 sec.
+INFO: [HLS 200-0] Preprocessing Module: __fir_2ch_int.cpp_li ...
+Execute       set_default_model __fir_2ch_int.cpp_li 
+Command       set_default_model returned 0; 0 sec.
+Execute       cdfg_preprocess -model __fir_2ch_int.cpp_li 
+Command       cdfg_preprocess returned 0; 0 sec.
+Execute       rtl_gen_preprocess __fir_2ch_int.cpp_li 
+Command       rtl_gen_preprocess returned 0; 0 sec.
+INFO: [HLS 200-0] Preprocessing Module: dummy_be ...
+Execute       set_default_model dummy_be 
+Command       set_default_model returned 0; 0 sec.
+Execute       cdfg_preprocess -model dummy_be 
+Command       cdfg_preprocess returned 0; 0 sec.
+Execute       rtl_gen_preprocess dummy_be 
+Command       rtl_gen_preprocess returned 0; 0 sec.
+INFO: [HLS 200-0] Preprocessing Module: fir_top ...
+Execute       set_default_model fir_top 
+Command       set_default_model returned 0; 0 sec.
+Execute       cdfg_preprocess -model fir_top 
+Command       cdfg_preprocess returned 0; 0.001 sec.
+Execute       rtl_gen_preprocess fir_top 
+Command       rtl_gen_preprocess returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for synthesis: dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dummy_fe'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dummy_fe 
+Command       set_default_model returned 0; 0.001 sec.
+Execute       schedule -model dummy_fe 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule returned 0; 0.295 sec.
+INFO: [HLS 200-111]  Elapsed time: 21.1 seconds; current allocated memory: 126.778 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.verbose.sched.rpt -verbose -f 
+Command       report returned 0; 0.012 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.sched.adb -f 
+Command       db_write returned 0; 0.008 sec.
+INFO: [HLS 200-0] Finish scheduling dummy_fe.
+Execute       set_default_model dummy_fe 
+Command       set_default_model returned 0; 0 sec.
+Execute       bind -model dummy_fe 
+INFO: [BIND 205-110] clear=
+INFO: [BIND 205-110] debug=
+INFO: [BIND 205-110] drf=
+INFO: [BIND 205-110] effort=
+INFO: [BIND 205-110] fast_refine=
+INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] global_opt=
+INFO: [BIND 205-110] gsearch=
+INFO: [BIND 205-110] help=
+INFO: [BIND 205-110] help-hidden=
+INFO: [BIND 205-110] min_mem_port=
+INFO: [BIND 205-110] min_op=
+INFO: [BIND 205-110] minreg=
+INFO: [BIND 205-110] ml=
+INFO: [BIND 205-110] model=dummy_fe
+INFO: [BIND 205-110] no_false_path=
+INFO: [BIND 205-110] no_min_op=
+INFO: [BIND 205-110] normalize=
+INFO: [BIND 205-110] quiet=
+INFO: [BIND 205-110] refine=
+INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] search=
+INFO: [BIND 205-110] tight_delay=
+INFO: [BIND 205-110] verbose=
+INFO: [BIND 205-110] wFF=
+INFO: [BIND 205-110] wFU=
+INFO: [BIND 205-110] wMUX=
+INFO: [BIND 205-110] wNET=
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind returned 0; 0.012 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.045 seconds; current allocated memory: 126.869 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.verbose.bind.rpt -verbose -f 
+Command       report returned 0; 0.01 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.bind.adb -f 
+Command       db_write returned 0; 0.006 sec.
+INFO: [HLS 200-0] Finish binding dummy_fe.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model run 
+Command       set_default_model returned 0; 0 sec.
+Execute       schedule -model run 
+INFO: [SCHED 204-11] Skip scheduling the IP block.
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.ip.hlp 
+Command         ap_source returned 0; 0.026 sec.
+Command       schedule returned 0; 0.064 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.094 seconds; current allocated memory: 129.214 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.verbose.sched.rpt -verbose -f 
+Command       report returned 0; 0.003 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.sched.adb -f 
+Command       db_write returned 0; 0.002 sec.
+INFO: [HLS 200-0] Finish scheduling run.
+Execute       set_default_model run 
+Command       set_default_model returned 0; 0 sec.
+Execute       bind -model run 
+INFO: [BIND 205-110] clear=
+INFO: [BIND 205-110] debug=
+INFO: [BIND 205-110] drf=
+INFO: [BIND 205-110] effort=
+INFO: [BIND 205-110] fast_refine=
+INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] global_opt=
+INFO: [BIND 205-110] gsearch=
+INFO: [BIND 205-110] help=
+INFO: [BIND 205-110] help-hidden=
+INFO: [BIND 205-110] min_mem_port=
+INFO: [BIND 205-110] min_op=
+INFO: [BIND 205-110] minreg=
+INFO: [BIND 205-110] ml=
+INFO: [BIND 205-110] model=run
+INFO: [BIND 205-110] no_false_path=
+INFO: [BIND 205-110] no_min_op=
+INFO: [BIND 205-110] normalize=
+INFO: [BIND 205-110] quiet=
+INFO: [BIND 205-110] refine=
+INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] search=
+INFO: [BIND 205-110] tight_delay=
+INFO: [BIND 205-110] verbose=
+INFO: [BIND 205-110] wFF=
+INFO: [BIND 205-110] wFU=
+INFO: [BIND 205-110] wMUX=
+INFO: [BIND 205-110] wNET=
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind returned 0; 0.005 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.026 seconds; current allocated memory: 129.224 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.verbose.bind.rpt -verbose -f 
+Command       report returned 0; 0.002 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.bind.adb -f 
+Command       db_write returned 0; 0.002 sec.
+INFO: [HLS 200-0] Finish binding run.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_fir_2ch_int_cpp_li'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model __fir_2ch_int.cpp_li 
+Command       set_default_model returned 0; 0 sec.
+Execute       schedule -model __fir_2ch_int.cpp_li 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule returned 0; 0.008 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.026 seconds; current allocated memory: 129.302 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.verbose.sched.rpt -verbose -f 
+Command       report returned 0; 0.004 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.sched.adb -f 
+Command       db_write returned 0; 0.005 sec.
+INFO: [HLS 200-0] Finish scheduling __fir_2ch_int.cpp_li.
+Execute       set_default_model __fir_2ch_int.cpp_li 
+Command       set_default_model returned 0; 0.001 sec.
+Execute       bind -model __fir_2ch_int.cpp_li 
+INFO: [BIND 205-110] clear=
+INFO: [BIND 205-110] debug=
+INFO: [BIND 205-110] drf=
+INFO: [BIND 205-110] effort=
+INFO: [BIND 205-110] fast_refine=
+INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] global_opt=
+INFO: [BIND 205-110] gsearch=
+INFO: [BIND 205-110] help=
+INFO: [BIND 205-110] help-hidden=
+INFO: [BIND 205-110] min_mem_port=
+INFO: [BIND 205-110] min_op=
+INFO: [BIND 205-110] minreg=
+INFO: [BIND 205-110] ml=
+INFO: [BIND 205-110] model=__fir_2ch_int.cpp_li
+INFO: [BIND 205-110] no_false_path=
+INFO: [BIND 205-110] no_min_op=
+INFO: [BIND 205-110] normalize=
+INFO: [BIND 205-110] quiet=
+INFO: [BIND 205-110] refine=
+INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] search=
+INFO: [BIND 205-110] tight_delay=
+INFO: [BIND 205-110] verbose=
+INFO: [BIND 205-110] wFF=
+INFO: [BIND 205-110] wFU=
+INFO: [BIND 205-110] wMUX=
+INFO: [BIND 205-110] wNET=
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind returned 0; 0.01 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.032 seconds; current allocated memory: 129.339 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.verbose.bind.rpt -verbose -f 
+Command       report returned 0; 0.013 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.bind.adb -f 
+Command       db_write returned 0; 0.005 sec.
+INFO: [HLS 200-0] Finish binding __fir_2ch_int.cpp_li.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dummy_be'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dummy_be 
+Command       set_default_model returned 0; 0 sec.
+Execute       schedule -model dummy_be 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule returned 0; 0.185 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.217 seconds; current allocated memory: 129.427 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.verbose.sched.rpt -verbose -f 
+Command       report returned 0; 0.005 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.sched.adb -f 
+Command       db_write returned 0; 0.007 sec.
+INFO: [HLS 200-0] Finish scheduling dummy_be.
+Execute       set_default_model dummy_be 
+Command       set_default_model returned 0; 0.001 sec.
+Execute       bind -model dummy_be 
+INFO: [BIND 205-110] clear=
+INFO: [BIND 205-110] debug=
+INFO: [BIND 205-110] drf=
+INFO: [BIND 205-110] effort=
+INFO: [BIND 205-110] fast_refine=
+INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] global_opt=
+INFO: [BIND 205-110] gsearch=
+INFO: [BIND 205-110] help=
+INFO: [BIND 205-110] help-hidden=
+INFO: [BIND 205-110] min_mem_port=
+INFO: [BIND 205-110] min_op=
+INFO: [BIND 205-110] minreg=
+INFO: [BIND 205-110] ml=
+INFO: [BIND 205-110] model=dummy_be
+INFO: [BIND 205-110] no_false_path=
+INFO: [BIND 205-110] no_min_op=
+INFO: [BIND 205-110] normalize=
+INFO: [BIND 205-110] quiet=
+INFO: [BIND 205-110] refine=
+INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] search=
+INFO: [BIND 205-110] tight_delay=
+INFO: [BIND 205-110] verbose=
+INFO: [BIND 205-110] wFF=
+INFO: [BIND 205-110] wFU=
+INFO: [BIND 205-110] wMUX=
+INFO: [BIND 205-110] wNET=
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind returned 0; 0.008 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.032 seconds; current allocated memory: 129.497 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.verbose.bind.rpt -verbose -f 
+Command       report returned 0; 0.009 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.bind.adb -f 
+Command       db_write returned 0; 0.008 sec.
+INFO: [HLS 200-0] Finish binding dummy_be.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_top'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fir_top 
+Command       set_default_model returned 0; 0 sec.
+Execute       schedule -model fir_top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule returned 0; 0.012 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.045 seconds; current allocated memory: 129.547 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.verbose.sched.rpt -verbose -f 
+Command       report returned 0; 0.003 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.sched.adb -f 
+Command       db_write returned 0; 0.006 sec.
+INFO: [HLS 200-0] Finish scheduling fir_top.
+Execute       set_default_model fir_top 
+Command       set_default_model returned 0; 0 sec.
+Execute       bind -model fir_top 
+INFO: [BIND 205-110] clear=
+INFO: [BIND 205-110] debug=
+INFO: [BIND 205-110] drf=
+INFO: [BIND 205-110] effort=
+INFO: [BIND 205-110] fast_refine=
+INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] global_opt=
+INFO: [BIND 205-110] gsearch=
+INFO: [BIND 205-110] help=
+INFO: [BIND 205-110] help-hidden=
+INFO: [BIND 205-110] min_mem_port=
+INFO: [BIND 205-110] min_op=
+INFO: [BIND 205-110] minreg=
+INFO: [BIND 205-110] ml=
+INFO: [BIND 205-110] model=fir_top
+INFO: [BIND 205-110] no_false_path=
+INFO: [BIND 205-110] no_min_op=
+INFO: [BIND 205-110] normalize=
+INFO: [BIND 205-110] quiet=
+INFO: [BIND 205-110] refine=
+INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] search=
+INFO: [BIND 205-110] tight_delay=
+INFO: [BIND 205-110] verbose=
+INFO: [BIND 205-110] wFF=
+INFO: [BIND 205-110] wFU=
+INFO: [BIND 205-110] wMUX=
+INFO: [BIND 205-110] wNET=
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind returned 0; 0.03 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.053 seconds; current allocated memory: 129.665 MB.
+Execute       report -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.verbose.bind.rpt -verbose -f 
+Command       report returned 0; 0.019 sec.
+Execute       db_write -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.bind.adb -f 
+Command       db_write returned 0; 0.007 sec.
+INFO: [HLS 200-0] Finish binding fir_top.
+Execute       get_model_list fir_top -filter all-wo-channel 
+Command       get_model_list returned 0; 0 sec.
+INFO: [HLS 200-0] Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dummy_fe 
+Command       rtl_gen_preprocess returned 0; 0.001 sec.
+Execute       rtl_gen_preprocess run 
+Command       rtl_gen_preprocess returned 0; 0 sec.
+Execute       rtl_gen_preprocess __fir_2ch_int.cpp_li 
+Command       rtl_gen_preprocess returned 0; 0.001 sec.
+Execute       rtl_gen_preprocess dummy_be 
+Command       rtl_gen_preprocess returned 0; 0 sec.
+Execute       rtl_gen_preprocess fir_top 
+Command       rtl_gen_preprocess returned 0; 0.001 sec.
+INFO: [HLS 200-0] Model list for RTL generation: dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dummy_fe'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dummy_fe -vendor xilinx -mg_file C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dummy_fe'.
+Command       create_rtl_model returned 0; 0.021 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 129.792 MB.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       gen_rtl dummy_fe -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/systemc/dummy_fe -synmodules dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top 
+Command       gen_rtl returned 0; 0.006 sec.
+Execute       gen_rtl dummy_fe -style xilinx -f -lang vhdl -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/vhdl/dummy_fe 
+Command       gen_rtl returned 0; 0.002 sec.
+Execute       gen_rtl dummy_fe -style xilinx -f -lang vlog -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/verilog/dummy_fe 
+Command       gen_rtl returned 0; 0.003 sec.
+Execute       gen_tb_info dummy_fe -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe -p C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db 
+Command       gen_tb_info returned 0; 0.007 sec.
+Execute       report -model dummy_fe -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/dummy_fe_csynth.rpt -f 
+Command       report returned 0; 0.006 sec.
+Execute       report -model dummy_fe -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/dummy_fe_csynth.xml -f -x 
+Command       report returned 0; 0.004 sec.
+Execute       report -model dummy_fe -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.verbose.rpt -verbose -f 
+Command       report returned 0; 0.014 sec.
+Execute       db_write -model dummy_fe -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.adb -f 
+Command       db_write returned 0; 0.011 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model run -vendor xilinx -mg_file C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run'.
+Command       create_rtl_model returned 0; 0.002 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 129.945 MB.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       gen_rtl run -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/systemc/run -synmodules dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top 
+Command       gen_rtl returned 0; 0 sec.
+Execute       gen_rtl run -style xilinx -f -lang vhdl -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/vhdl/run 
+Command       gen_rtl returned 0; 0 sec.
+Execute       gen_rtl run -style xilinx -f -lang vlog -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/verilog/run 
+Command       gen_rtl returned 0; 0 sec.
+Execute       gen_tb_info run -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run -p C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db 
+Command       gen_tb_info returned 0; 0.006 sec.
+Execute       report -model run -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/run_csynth.rpt -f 
+Command       report returned 0; 0.004 sec.
+Execute       report -model run -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/run_csynth.xml -f -x 
+Command       report returned 0; 0.003 sec.
+Execute       report -model run -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.verbose.rpt -verbose -f 
+Command       report returned 0; 0.005 sec.
+Execute       db_write -model run -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.adb -f 
+Command       db_write returned 0; 0.007 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_fir_2ch_int_cpp_li'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model __fir_2ch_int.cpp_li -vendor xilinx -mg_file C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_fir_2ch_int_cpp_li'.
+Command       create_rtl_model returned 0; 0.006 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.052 seconds; current allocated memory: 130.120 MB.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       gen_rtl __fir_2ch_int.cpp_li -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/systemc/p_fir_2ch_int_cpp_li -synmodules dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top 
+Command       gen_rtl returned 0; 0.002 sec.
+Execute       gen_rtl __fir_2ch_int.cpp_li -style xilinx -f -lang vhdl -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/vhdl/p_fir_2ch_int_cpp_li 
+Command       gen_rtl returned 0; 0.001 sec.
+Execute       gen_rtl __fir_2ch_int.cpp_li -style xilinx -f -lang vlog -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/verilog/p_fir_2ch_int_cpp_li 
+Command       gen_rtl returned 0; 0.001 sec.
+Execute       gen_tb_info __fir_2ch_int.cpp_li -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li -p C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db 
+Command       gen_tb_info returned 0; 0.003 sec.
+Execute       report -model __fir_2ch_int.cpp_li -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/p_fir_2ch_int_cpp_li_csynth.rpt -f 
+Command       report returned 0; 0.004 sec.
+Execute       report -model __fir_2ch_int.cpp_li -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/p_fir_2ch_int_cpp_li_csynth.xml -f -x 
+Command       report returned 0; 0.002 sec.
+Execute       report -model __fir_2ch_int.cpp_li -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.verbose.rpt -verbose -f 
+Command       report returned 0; 0.013 sec.
+Execute       db_write -model __fir_2ch_int.cpp_li -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.adb -f 
+Command       db_write returned 0; 0.008 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dummy_be'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dummy_be -vendor xilinx -mg_file C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dummy_be'.
+Command       create_rtl_model returned 0; 0.007 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 130.277 MB.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       gen_rtl dummy_be -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/systemc/dummy_be -synmodules dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top 
+Command       gen_rtl returned 0; 0.002 sec.
+Execute       gen_rtl dummy_be -style xilinx -f -lang vhdl -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/vhdl/dummy_be 
+Command       gen_rtl returned 0; 0.001 sec.
+Execute       gen_rtl dummy_be -style xilinx -f -lang vlog -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/verilog/dummy_be 
+Command       gen_rtl returned 0; 0.001 sec.
+Execute       gen_tb_info dummy_be -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be -p C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db 
+Command       gen_tb_info returned 0; 0.005 sec.
+Execute       report -model dummy_be -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/dummy_be_csynth.rpt -f 
+Command       report returned 0; 0.005 sec.
+Execute       report -model dummy_be -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/dummy_be_csynth.xml -f -x 
+Command       report returned 0; 0.005 sec.
+Execute       report -model dummy_be -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.verbose.rpt -verbose -f 
+Command       report returned 0; 0.013 sec.
+Execute       db_write -model dummy_be -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.adb -f 
+Command       db_write returned 0; 0.013 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_top'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model fir_top -vendor xilinx -mg_file C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/din_i_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/din_q_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/dout_i_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_top/dout_q_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_top'.
+Command       create_rtl_model returned 0; 0.013 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.095 seconds; current allocated memory: 130.504 MB.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       gen_rtl fir_top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/systemc/fir_top -synmodules dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top 
+Command       gen_rtl returned 0; 0.002 sec.
+Execute       gen_rtl fir_top -istop -style xilinx -f -lang vhdl -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/vhdl/fir_top 
+Command       gen_rtl returned 0; 0.01 sec.
+Execute       gen_rtl fir_top -istop -style xilinx -f -lang vlog -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/verilog/fir_top 
+Command       gen_rtl returned 0; 0.005 sec.
+Execute       export_constraint_db -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.constraint.tcl -f -tool general 
+Command       export_constraint_db returned 0; 0.001 sec.
+Execute       report -model fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.design.xml -verbose -f -dv 
+Command       report returned 0; 0.034 sec.
+Execute       report -model fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.sdaccel.xml -verbose -f -sdaccel 
+Command       report returned 0; 0.018 sec.
+Execute       gen_tb_info fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top -p C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db 
+Command       gen_tb_info returned 0; 0.003 sec.
+Execute       report -model fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/fir_top_csynth.rpt -f 
+Command       report returned 0; 0.006 sec.
+Execute       report -model fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/syn/report/fir_top_csynth.xml -f -x 
+Command       report returned 0; 0.006 sec.
+Execute       report -model fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.verbose.rpt -verbose -f 
+Command       report returned 0; 0.026 sec.
+Execute       db_write -model fir_top -o C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.adb -f 
+Command       db_write returned 0; 0.016 sec.
+Execute       sc_get_clocks fir_top 
+Command       sc_get_clocks returned 0; 0 sec.
+Execute       sc_get_portdomain fir_top 
+Command       sc_get_portdomain returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for RTL component generation: dummy_fe run __fir_2ch_int.cpp_li dummy_be fir_top
+INFO: [HLS 200-0] Handling components in module [dummy_fe] ... 
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-0] Handling components in module [run] ... 
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+INFO: [HLS 200-0] Found component run.
+INFO: [HLS 200-0] Append model run
+Command       ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-0] Handling components in module [p_fir_2ch_int_cpp_li] ... 
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-0] Handling components in module [dummy_be] ... 
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-0] Handling components in module [fir_top] ... 
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.compgen.tcl 
+INFO: [HLS 200-0] Found component fifo_w16_d1_A.
+INFO: [HLS 200-0] Append model fifo_w16_d1_A
+INFO: [HLS 200-0] Found component fifo_w40_d1_A.
+INFO: [HLS 200-0] Append model fifo_w40_d1_A
+Command       ap_source returned 0; 0.002 sec.
+INFO: [HLS 200-0] Append model dummy_fe
+INFO: [HLS 200-0] Append model run
+INFO: [HLS 200-0] Append model p_fir_2ch_int_cpp_li
+INFO: [HLS 200-0] Append model dummy_be
+INFO: [HLS 200-0] Append model fir_top
+INFO: [HLS 200-0] Generating RTL model list ...
+INFO: [HLS 200-0] All models in this session: run fifo_w16_d1_A fifo_w40_d1_A dummy_fe run p_fir_2ch_int_cpp_li dummy_be fir_top
+INFO: [HLS 200-0] To file: write model run
+INFO: [HLS 200-0] To file: write model fifo_w16_d1_A
+INFO: [HLS 200-0] To file: write model fifo_w40_d1_A
+INFO: [HLS 200-0] To file: write model dummy_fe
+INFO: [HLS 200-0] To file: write model run
+INFO: [HLS 200-0] To file: write model p_fir_2ch_int_cpp_li
+INFO: [HLS 200-0] To file: write model dummy_be
+INFO: [HLS 200-0] To file: write model fir_top
+INFO: [HLS 200-0] Finished generating RTL model list.
+
+
+INFO: [HLS 200-0] RTL Generation done.
+INFO: [HLS 200-0] CAS Generation done.
+INFO: [HLS 200-0] CBC Generation done.
+Execute       export_ssdm C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/a.export.ll 
+Command       export_ssdm returned 0; 0.002 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.004 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.009 sec.
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.116 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.164 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.168 sec.
+Command       ap_source returned 0; 0.168 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.008 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.compgen.tcl 
+Command       ap_source returned 0; 0.021 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.008 sec.
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.009 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.117 sec.
+Execute             source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.161 sec.
+Execute           source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.164 sec.
+Command       ap_source returned 0; 0.164 sec.
+Execute       source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.tbgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.007 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.compgen.tcl 
+Command       ap_source returned 0; 0.011 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_fe.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/run.compgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/p_fir_2ch_int_cpp_li.compgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/dummy_be.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.compgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.constraint.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.tbgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.tbgen.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/fir_top.constraint.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       sc_get_clocks fir_top 
+Command       sc_get_clocks returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Users/vsananda/work/fir_2ch_int/proj/solution1/impl/misc/run_core_ip.tcl 
+Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 178.770 ; gain = 122.730
+INFO: [SYSC 207-301] Generating SystemC RTL for fir_top.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_top.
+Command     autosyn returned 0; 2.247 sec.
+Command   csynth_design returned 0; 22.082 sec.
+Command ap_source returned 0; 22.539 sec.
+Execute cleanup_all 
+Command cleanup_all returned 0; 0.006 sec.

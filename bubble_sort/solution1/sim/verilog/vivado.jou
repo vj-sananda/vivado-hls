@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun 29 15:46:23 2018
+# Process ID: 2988
+# Current directory: C:/Users/vsananda/work/bubble_sort/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/Users/vsananda/work/bubble_sort/solution1/sim/verilog/vivado.log
+# Journal file: C:/Users/vsananda/work/bubble_sort/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config C:/Users/vsananda/work/bubble_sort/solution1/sim/verilog/sort.wcfg
+save_wave_config {C:/Users/vsananda/work/bubble_sort/solution1/sim/verilog/sort.wcfg}
+close_sim

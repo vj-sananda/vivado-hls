@@ -1,0 +1,7 @@
+sv work "glbl.v"
+sv xil_defaultlib "apint_arith.autotb.v"
+sv xil_defaultlib "apint_arith.v"
+sv xil_defaultlib "apint_arith_mul_mdEe.v"
+sv xil_defaultlib "apint_arith_sdiv_cud.v"
+sv xil_defaultlib "apint_arith_srem_bkb.v"
+

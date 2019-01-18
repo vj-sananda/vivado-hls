@@ -1,0 +1,9 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="13" filename="add/add.c" linenumber="4" name="exitcond" contextFuncName="add" moduleName="add" rtlName="exitcond_fu_83_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="C:\Users\vsananda\work"></item>
+<item  id="15" filename="add/add.c" linenumber="4" name="i_1" contextFuncName="add" moduleName="add" rtlName="i_1_fu_89_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\vsananda\work"></item>
+<item  id="18" filename="add/add.c" linenumber="5" name="tmp_1" contextFuncName="add" moduleName="add" rtlName="tmp_1_fu_95_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\vsananda\work"></item>
+<item  id="23" filename="add/add.c" linenumber="5" name="tmp_2" contextFuncName="add" moduleName="add" rtlName="tmp_2_fu_101_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="C:\Users\vsananda\work"></item>
+<item  id="24" filename="add/add.c" linenumber="5" name="tmp_3" contextFuncName="add" moduleName="add" rtlName="tmp_3_fu_107_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="C:\Users\vsananda\work"></item>
+</annotationInfo>
+</annotationInfo>

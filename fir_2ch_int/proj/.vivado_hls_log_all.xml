@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name '__fir_2ch_int.cpp_li' to 'p_fir_2ch_int_cpp_li'." projectName="proj" solutionName="solution1" date="2018-06-27T16:18:45.611-0500" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function '__fir_2ch_int.cpp_line164_proc' to '__fir_2ch_int.cpp_li' (fir_2ch_int.cpp:164:5)" projectName="proj" solutionName="solution1" date="2018-06-27T16:18:45.595-0500" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::FIR&lt;my_params>::run' to 'run' (C:/Xilinx/Vivado/2017.4/common/technology/autopilot\hls_fir.h:580)" projectName="proj" solutionName="solution1" date="2018-06-27T16:18:44.956-0500" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'fir_out' should be updated in process function '__fir_2ch_int.cpp_line164_proc' (fir_2ch_int.cpp:164:5), otherwise it may not be synthesized correctly." projectName="proj" solutionName="solution1" date="2018-06-27T16:18:44.113-0500" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'fir_out': cannot find another array to be merged with." projectName="proj" solutionName="solution1" date="2018-06-27T16:18:44.098-0500" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'fir_in': cannot find another array to be merged with." projectName="proj" solutionName="solution1" date="2018-06-27T16:18:43.942-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from fir_2ch_int.cpp:1:&#xD;&#xA;In file included from fir_2ch_int.cpp:92:&#xD;&#xA;In file included from ./fir_2ch_int.h:94:&#xD;&#xA;C:/Xilinx/Vivado/2017.4/common/technology/autopilot\hls_fir.h:174:25: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]&#xD;&#xA;    static const double sample_frequency = 0.001;&#xD;&#xA;                        ^                  ~~~~~&#xD;&#xA;1 warning generated." projectName="proj" solutionName="solution1" date="2018-06-27T16:18:40.650-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

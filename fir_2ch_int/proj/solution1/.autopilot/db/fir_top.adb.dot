@@ -1,0 +1,22 @@
+digraph ap_test{
+graph [splines=ortho]
+rankdir=BT;
+size="500, 500";
+1 [shape=box fixedsize=true width=1.0 height=0.25]
+2 [shape=box fixedsize=true width=1.0 height=0.25]
+
+3 [shape=box fixedsize=true width=1.0 height=0.25]
+4 [shape=box fixedsize=true width=1.0 height=0.25]
+
+
+21[shape=box fixedsize=true width=1.75 height=2.0]
+24[shape=box fixedsize=true width=2.6833333333333336 height=2.0]
+27[shape=box fixedsize=true width=1.75 height=2.0]
+
+1 -> 21
+2 -> 21
+27 -> 3
+27 -> 4
+21 -> 24
+24 -> 27
+}

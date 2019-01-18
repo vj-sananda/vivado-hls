@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun 29 16:24:06 2018
+# Process ID: 1412
+# Current directory: C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/xsim.dir/loop_pipeline/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/xsim.dir/loop_pipeline/webtalk/xsim_webtalk.tcl -notrace

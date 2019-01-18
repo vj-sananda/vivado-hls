@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1530134326641">
+  <ports id="1" name="din_i_V" type="PortType" originalName="din_i.V" coreName="FIFO" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="din_q_V" type="PortType" originalName="din_q.V" coreName="FIFO" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="out_V" type="PortType" originalName="out.V" coreName="FIFO" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="23" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="26" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="27" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="28" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="29" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="32" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="35" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="36" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="37" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="40" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="43" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="44" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="46" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="48" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="49" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1"/>
+  <blocks id="8" name="block_8" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="node_7" lineNumber="139" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" opcode="br" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="139" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="fir_2ch_int.cpp">
+      <validLinenumbers>139</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="14" name="block_14" type="BlockType">
+    <controlInputObjs>block_8</controlInputObjs>
+    <controlInputObjs>block_20</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_22</controlOutputObjs>
+    <controlOutputObjs>block_20</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i" originalName="i" bitwidth="12" opcode="phi" nodeLabel="1" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_8</controlInputObjs>
+      <controlInputObjs>block_20</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="tmp" lineNumber="139" fileName="fir_2ch_int.cpp" fileDirectory=".." rtlName="tmp_fu_65_p2" contextFuncName="dummy_fe" bitwidth="1" opcode="icmp" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="139" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_2" lineNumber="139" originalName="i" fileName="fir_2ch_int.cpp" fileDirectory=".." rtlName="i_2_fu_71_p2" contextFuncName="dummy_fe" bitwidth="12" opcode="add" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="139" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="node_13" lineNumber="139" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="139" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_20</controlInputObjs>
+      <controlInputObjs>block_22</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="fir_2ch_int.cpp">
+      <validLinenumbers>139</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="20" name="block_20" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="din_i_V_read" lineNumber="141" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" bitwidth="16" opcode="read" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="141" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>din_i_V</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="node_16" lineNumber="141" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" opcode="write" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="141" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>out_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="din_q_V_read" lineNumber="142" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" bitwidth="16" opcode="read" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="142" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>din_q_V</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="node_18" lineNumber="142" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" opcode="write" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="142" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>out_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="node_19" lineNumber="139" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="139" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="fir_2ch_int.cpp">
+      <validLinenumbers>141</validLinenumbers>
+      <validLinenumbers>142</validLinenumbers>
+      <validLinenumbers>139</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="22" name="block_22" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="node_21" lineNumber="144" fileName="fir_2ch_int.cpp" fileDirectory=".." contextFuncName="dummy_fe" opcode="ret" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="fir_2ch_int.cpp" linenumber="144" fileDirectory="C:\Users\vsananda\work\fir_2ch_int" functionName="dummy_fe"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="fir_2ch_int.cpp">
+      <validLinenumbers>144</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="i_2_reg_80">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="din_q_V_read_reg_85">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_54">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_phi_fu_58">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_65">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_71">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="din_i_V_read_read_fu_34">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="din_q_V_read_read_fu_48">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_40">
+    <nodeIds>16</nodeIds>
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioPorts name="din_i_V">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="din_q_V">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_V">
+    <contents name="write">
+      <nodeIds>16</nodeIds>
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="8"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="9"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="12"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dummy_fe" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="5001" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="2500" mMaxTripCount="2500" mMinLatency="5000" mMaxLatency="-1" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>20</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>22</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

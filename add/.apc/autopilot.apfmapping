@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="add.c" path="C:\Users\vsananda\work\add\add.c"/>
+  </source>
+  <testbench>
+    <originFiles name="add_test.c" path="C:\Users\vsananda\work\add\add_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

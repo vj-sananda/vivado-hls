@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_A.v"
+sv xil_defaultlib "loop_pipeline.autotb.v"
+sv xil_defaultlib "loop_pipeline.v"
+sv xil_defaultlib "loop_pipeline_macbkb.v"
+

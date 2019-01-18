@@ -1,0 +1,152 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sort'" level="0">
+<item name = "Date">Fri Jun 29 15:42:02 2018
+</item>
+<item name = "Version">2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)</item>
+<item name = "Project">bubble_sort</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">6.51</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4002, 2002002, 4002, 2002002, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">2000, 2000000, 2 ~ 2000, -, -, 1000, no</column>
+<column name=" + Loop 1.1">0, 1998, 2, -, -, 0 ~ 999, no</column>
+<column name="- Loop 2">2000, 2000, 2, -, -, 1000, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 96</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 101</column>
+<column name="Register">-, -, 87, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_2_fu_164_p2">+, 0, 0, 17, 10, 1</column>
+<column name="i_fu_146_p2">+, 0, 0, 18, 11, 2</column>
+<column name="j_1_fu_130_p2">+, 0, 0, 17, 10, 1</column>
+<column name="exitcond1_fu_124_p2">icmp, 0, 0, 13, 11, 11</column>
+<column name="exitcond_fu_158_p2">icmp, 0, 0, 13, 10, 6</column>
+<column name="tmp_4_fu_152_p2">icmp, 0, 0, 18, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_address0">21, 4, 10, 40</column>
+<column name="a_address1">15, 3, 10, 30</column>
+<column name="ap_NS_fsm">38, 7, 1, 7</column>
+<column name="i_1_reg_101">9, 2, 10, 20</column>
+<column name="indvars_iv_reg_78">9, 2, 11, 22</column>
+<column name="j_reg_90">9, 2, 10, 20</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="a_addr_1_reg_191">10, 0, 10, 0</column>
+<column name="a_addr_reg_186">10, 0, 10, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="i_1_reg_101">10, 0, 10, 0</column>
+<column name="i_2_reg_207">10, 0, 10, 0</column>
+<column name="indvars_iv_reg_78">11, 0, 11, 0</column>
+<column name="j_1_reg_181">10, 0, 10, 0</column>
+<column name="j_reg_90">10, 0, 10, 0</column>
+<column name="tmp_5_reg_212">10, 0, 64, 54</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sort, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, sort, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sort, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sort, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sort, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sort, return value</column>
+<column name="a_address0">out, 10, ap_memory, a, array</column>
+<column name="a_ce0">out, 1, ap_memory, a, array</column>
+<column name="a_we0">out, 1, ap_memory, a, array</column>
+<column name="a_d0">out, 32, ap_memory, a, array</column>
+<column name="a_q0">in, 32, ap_memory, a, array</column>
+<column name="a_address1">out, 10, ap_memory, a, array</column>
+<column name="a_ce1">out, 1, ap_memory, a, array</column>
+<column name="a_we1">out, 1, ap_memory, a, array</column>
+<column name="a_d1">out, 32, ap_memory, a, array</column>
+<column name="a_q1">in, 32, ap_memory, a, array</column>
+<column name="out_r_address0">out, 10, ap_memory, out_r, array</column>
+<column name="out_r_ce0">out, 1, ap_memory, out_r, array</column>
+<column name="out_r_we0">out, 1, ap_memory, out_r, array</column>
+<column name="out_r_d0">out, 32, ap_memory, out_r, array</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">6.51</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp', bubble_sort/sort.c:11">load, 3.25, 3.25, -, -, -, -, -, -, &apos;a&apos;, -, -, -, -</column>
+<column name="bubble_sort/sort.c:14">store, 3.25, 6.51, &apos;tmp&apos;, bubble_sort/sort.c:11, -, -, -, -, -, &apos;a&apos;, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>
