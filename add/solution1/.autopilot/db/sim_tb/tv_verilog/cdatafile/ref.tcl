@@ -1,6 +1,6 @@
 set depth_list {
-{a 10}
-{b 10}
-{out_r 1}
+{a_V 10}
+{b_V 10}
+{out_V 1}
 }
 set trans_num 1

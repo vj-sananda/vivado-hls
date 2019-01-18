@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/vsananda/work/add/.apc/.src</location>
+			<location>/home/centos/src/vivado-hls/add/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/vsananda/work/add/.apc/.tb</location>
+			<location>/home/centos/src/vivado-hls/add/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/vsananda/work/add/solution1/.tcls</location>
+			<location>/home/centos/src/vivado-hls/add/solution1/.tcls</location>
 		</link>
 		<link>
-			<name>source/add.c</name>
+			<name>source/add.cpp</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/add/add.c</location>
+			<location>/home/centos/src/vivado-hls/add/add.cpp</location>
 		</link>
 		<link>
-			<name>testbench/add_test.c</name>
+			<name>testbench/add_test.cpp</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/add/add_test.c</location>
+			<location>/home/centos/src/vivado-hls/add/add_test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/add/solution1/solution1.directive</location>
+			<location>/home/centos/src/vivado-hls/add/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/add/solution1/directives.tcl</location>
+			<location>/home/centos/src/vivado-hls/add/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/add/solution1/script.tcl</location>
+			<location>/home/centos/src/vivado-hls/add/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

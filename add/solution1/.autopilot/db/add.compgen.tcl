@@ -12,16 +12,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 1 \
-    name a \
+    name a_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename a \
+    corename a_V \
     op interface \
-    ports { a_address0 { O 4 vector } a_ce0 { O 1 bit } a_q0 { I 32 vector } } \
+    ports { a_V_address0 { O 4 vector } a_V_ce0 { O 1 bit } a_V_q0 { I 4 vector } a_V_address1 { O 4 vector } a_V_ce1 { O 1 bit } a_V_q1 { I 4 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_V'"
 }
 }
 
@@ -31,16 +31,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 2 \
-    name b \
+    name b_V \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename b \
+    corename b_V \
     op interface \
-    ports { b_address0 { O 4 vector } b_ce0 { O 1 bit } b_q0 { I 32 vector } } \
+    ports { b_V_address0 { O 4 vector } b_V_ce0 { O 1 bit } b_V_q0 { I 4 vector } b_V_address1 { O 4 vector } b_V_ce1 { O 1 bit } b_V_q1 { I 4 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b_V'"
 }
 }
 
@@ -49,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 3 \
-    name out_r \
+    name out_V \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_out_r \
+    corename dc_out_V \
     op interface \
-    ports { out_r { O 32 vector } out_r_ap_vld { O 1 bit } } \
+    ports { out_V { O 4 vector } out_V_ap_vld { O 1 bit } } \
 } "
 }
 

@@ -1,19 +1,5 @@
-   Build using "C:/Xilinx/Vivado/2017.4/msys/bin/g++.exe"
+   Build using "/opt/Xilinx/Vivado/2017.4.op/lnx64/tools/gcc/bin/g++"
    Compiling apatb_add.cpp
-   Compiling (apcc) add.c_pre.c.tb.c
-INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/apcc.exe'
-INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Fri Jun 29 14:29:27 -0500 2018
-INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/add/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is apcc_db
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) add_test.c_pre.c.tb.c
-INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/apcc.exe'
-INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Fri Jun 29 14:29:31 -0500 2018
-INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/add/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is apcc_db
-INFO: [APCC 202-1] APCC is done.
+   Compiling add_test.cpp_pre.cpp.tb.cpp
+   Compiling add.cpp_pre.cpp.tb.cpp
    Generating cosim.tv.exe

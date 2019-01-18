@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="add.c" path="C:\Users\vsananda\work\add\add.c"/>
+    <originFiles name="add.cpp" path="/home/centos/src/vivado-hls/add/add.cpp"/>
   </source>
   <testbench>
-    <originFiles name="add_test.c" path="C:\Users\vsananda\work\add\add_test.c"/>
+    <originFiles name="add_test.cpp" path="/home/centos/src/vivado-hls/add/add_test.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

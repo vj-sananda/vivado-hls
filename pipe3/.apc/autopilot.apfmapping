@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pipe3.c" path="/home/centos/src/vivado-hls/pipe3/pipe3.c"/>
+  </source>
+  <testbench>
+    <originFiles name="pipe3_test.c" path="/home/centos/src/vivado-hls/pipe3/pipe3_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

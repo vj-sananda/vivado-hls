@@ -5,7 +5,7 @@ set ClockList {ap_clk}
 set multiClockList {}
 set PortClockMap {}
 set CombLogicFlag 0
-set PipelineFlag 0
+set PipelineFlag 1
 set DataflowTaskPipelineFlag  1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
@@ -40,11 +40,11 @@ set ExportMCPathFlag "0"
 set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
-set TargetInfo "xc7z020:clg484:-1"
-set SourceFiles {sc {} c ../add.c}
+set TargetInfo "xcvu9p:-fsgd2104:-3-e-es1"
+set SourceFiles {sc {} c ../add.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {C:/Users/vsananda/work/add/solution1/solution1.directive}
-set TBFiles {verilog ../add_test.c bc ../add_test.c vhdl ../add_test.c sc ../add_test.c cas ../add_test.c c {}}
+set DirectiveFile {/home/centos/src/vivado-hls/add/solution1/solution1.directive}
+set TBFiles {verilog ../add_test.cpp bc ../add_test.cpp vhdl ../add_test.cpp sc ../add_test.cpp cas ../add_test.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -52,7 +52,7 @@ set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
-set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
+set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus xilinx/virtexuplus/virtexuplus_fpv7}}}
 set DefaultPlatform "DefaultPlatform"
 set TBTVFileNotFound ""
 set AppFile "../vivado_hls.app"

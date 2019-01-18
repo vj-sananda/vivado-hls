@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName add.c_pre.c.tb.c
+set ::AESL_AUTOSIM::gTopFileName add.cpp_pre.cpp.tb.cpp

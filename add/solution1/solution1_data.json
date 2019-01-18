@@ -2,15 +2,15 @@
   "Top": "add",
   "RtlTop": "add",
   "RtlPrefix": "",
-  "SourceLanguage": "c",
+  "SourceLanguage": "cpp",
   "ResetStyle": "control",
   "GenerateBdFiles": "0",
   "HostMachineBits": "64",
   "Target": {
-    "Family": "zynq",
-    "Device": "xc7z020",
-    "Package": "clg484",
-    "Speed": "-1"
+    "Family": "virtexuplus",
+    "Device": "xcvu9p",
+    "Package": "-fsgd2104",
+    "Speed": "-3-e-es1"
   },
   "HlsSolution": {
     
@@ -19,8 +19,8 @@
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
     "IsCombLogic": "0",
-    "II": "x",
-    "Latency": "21",
+    "II": "5",
+    "Latency": "5",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -34,7 +34,7 @@
     "Taxonomy": "\/VIVADO_HLS_IP"
   },
   "Files": {
-    "CSource": ["..\/add.c"],
+    "CSource": ["..\/add.cpp"],
     "Vhdl": ["impl\/vhdl\/add.vhd"],
     "Verilog": ["impl\/verilog\/add.v"],
     "Misc": ["impl\/misc\/logo.png"]
@@ -45,7 +45,7 @@
     "IP": []
   },
   "Interfaces": {
-    "a_address0": {
+    "a_V_address0": {
       "type": "data",
       "dir": "out",
       "width": "4",
@@ -54,13 +54,31 @@
           "Width": "4"
         }}
     },
-    "a_q0": {
+    "a_V_address1": {
+      "type": "data",
+      "dir": "out",
+      "width": "4",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "4"
+        }}
+    },
+    "a_V_q0": {
       "type": "data",
       "dir": "in",
-      "width": "32",
+      "width": "4",
       "ctype": {"DATA": {
           "Type": "integer signed",
-          "Width": "32"
+          "Width": "4"
+        }}
+    },
+    "a_V_q1": {
+      "type": "data",
+      "dir": "in",
+      "width": "4",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "4"
         }}
     },
     "ap_clk": {
@@ -83,7 +101,7 @@
       "polarity": "ACTIVE_HIGH",
       "ctype": {"RST": {"Type": "bool"}}
     },
-    "b_address0": {
+    "b_V_address0": {
       "type": "data",
       "dir": "out",
       "width": "4",
@@ -92,22 +110,40 @@
           "Width": "4"
         }}
     },
-    "b_q0": {
-      "type": "data",
-      "dir": "in",
-      "width": "32",
-      "ctype": {"DATA": {
-          "Type": "integer signed",
-          "Width": "32"
-        }}
-    },
-    "out_r": {
+    "b_V_address1": {
       "type": "data",
       "dir": "out",
-      "width": "32",
+      "width": "4",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "4"
+        }}
+    },
+    "b_V_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "4",
       "ctype": {"DATA": {
           "Type": "integer signed",
-          "Width": "32"
+          "Width": "4"
+        }}
+    },
+    "b_V_q1": {
+      "type": "data",
+      "dir": "in",
+      "width": "4",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "4"
+        }}
+    },
+    "out_V": {
+      "type": "data",
+      "dir": "out",
+      "width": "4",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "4"
         }}
     }
   },
@@ -136,35 +172,59 @@
       "dir": "out",
       "width": "1"
     },
-    "a_address0": {
+    "a_V_address0": {
       "dir": "out",
       "width": "4"
     },
-    "a_ce0": {
+    "a_V_ce0": {
       "dir": "out",
       "width": "1"
     },
-    "a_q0": {
+    "a_V_q0": {
       "dir": "in",
-      "width": "32"
+      "width": "4"
     },
-    "b_address0": {
+    "a_V_address1": {
       "dir": "out",
       "width": "4"
     },
-    "b_ce0": {
+    "a_V_ce1": {
       "dir": "out",
       "width": "1"
     },
-    "b_q0": {
+    "a_V_q1": {
       "dir": "in",
-      "width": "32"
+      "width": "4"
     },
-    "out_r": {
+    "b_V_address0": {
       "dir": "out",
-      "width": "32"
+      "width": "4"
     },
-    "out_r_ap_vld": {
+    "b_V_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "b_V_q0": {
+      "dir": "in",
+      "width": "4"
+    },
+    "b_V_address1": {
+      "dir": "out",
+      "width": "4"
+    },
+    "b_V_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "b_V_q1": {
+      "dir": "in",
+      "width": "4"
+    },
+    "out_V": {
+      "dir": "out",
+      "width": "4"
+    },
+    "out_V_ap_vld": {
       "dir": "out",
       "width": "1"
     }
@@ -174,65 +234,75 @@
       "interfaceRef": "ap_ctrl",
       "dir": "out"
     },
-    "a_q0": {
-      "interfaceRef": "a_q0",
+    "a_V_q0": {
+      "interfaceRef": "a_V_q0",
       "dir": "in",
-      "dataWidth": "32",
+      "dataWidth": "4",
       "busTypeRef": "ap_memory",
       "arraySize": "10",
       "handshakeRef": "ap_none"
     },
-    "b_q0": {
-      "interfaceRef": "b_q0",
+    "a_V_q1": {
+      "interfaceRef": "a_V_q1",
       "dir": "in",
-      "dataWidth": "32",
+      "dataWidth": "4",
       "busTypeRef": "ap_memory",
       "arraySize": "10",
       "handshakeRef": "ap_none"
     },
-    "out_r": {
-      "interfaceRef": "out_r",
+    "b_V_q0": {
+      "interfaceRef": "b_V_q0",
+      "dir": "in",
+      "dataWidth": "4",
+      "busTypeRef": "ap_memory",
+      "arraySize": "10",
+      "handshakeRef": "ap_none"
+    },
+    "b_V_q1": {
+      "interfaceRef": "b_V_q1",
+      "dir": "in",
+      "dataWidth": "4",
+      "busTypeRef": "ap_memory",
+      "arraySize": "10",
+      "handshakeRef": "ap_none"
+    },
+    "out_V": {
+      "interfaceRef": "out_V",
       "dir": "out",
-      "dataWidth": "32",
+      "dataWidth": "4",
       "handshakeRef": "ap_vld",
-      "firstOutLatency": "1"
+      "firstOutLatency": "5"
     }
   },
   "ModuleInfo": {
     "Hierarchy": {"ModuleName": "add"},
     "Metrics": {"add": {
         "Latency": {
-          "LatencyBest": "21",
-          "LatencyAvg": "21",
-          "LatencyWorst": "21",
-          "PipelineII": "22",
-          "PipelineDepth": "",
-          "PipelineType": "none"
+          "LatencyBest": "5",
+          "LatencyAvg": "5",
+          "LatencyWorst": "5",
+          "PipelineII": "5",
+          "PipelineDepth": "6",
+          "PipelineType": "function"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "6.69"
+          "Estimate": "1.89"
         },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "10",
-            "Latency": "20",
-            "PipelineII": "",
-            "PipelineDepth": "2"
-          }],
         "Area": {
-          "FF": "43",
-          "LUT": "125",
+          "FF": "39",
+          "LUT": "350",
           "BRAM_18K": "0",
-          "DSP48E": "0"
+          "DSP48E": "0",
+          "URAM": "0"
         }
       }}
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2018-06-29 14:28:33 -0500",
+    "Time": "2019-01-18 16:51:15 CST",
     "ToolName": "vivado_hls",
-    "ToolVersion": "2017.4"
+    "ToolVersion": "2017.4.op"
   }
 }

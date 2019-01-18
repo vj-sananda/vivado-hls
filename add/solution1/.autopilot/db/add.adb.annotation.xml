@@ -1,9 +1,21 @@
 <annotationInfo>
-<annotationInfo>
-<item  id="13" filename="add/add.c" linenumber="4" name="exitcond" contextFuncName="add" moduleName="add" rtlName="exitcond_fu_83_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="C:\Users\vsananda\work"></item>
-<item  id="15" filename="add/add.c" linenumber="4" name="i_1" contextFuncName="add" moduleName="add" rtlName="i_1_fu_89_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\vsananda\work"></item>
-<item  id="18" filename="add/add.c" linenumber="5" name="tmp_1" contextFuncName="add" moduleName="add" rtlName="tmp_1_fu_95_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\vsananda\work"></item>
-<item  id="23" filename="add/add.c" linenumber="5" name="tmp_2" contextFuncName="add" moduleName="add" rtlName="tmp_2_fu_101_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="C:\Users\vsananda\work"></item>
-<item  id="24" filename="add/add.c" linenumber="5" name="tmp_3" contextFuncName="add" moduleName="add" rtlName="tmp_3_fu_107_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="C:\Users\vsananda\work"></item>
-</annotationInfo>
+<item  id="49" filename="add/add.cpp" linenumber="9" name="tmp2" contextFuncName="add" moduleName="add" rtlName="grp_fu_257_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="50" filename="add/add.cpp" linenumber="9" name="tmp4" contextFuncName="add" moduleName="add" rtlName="tmp4_fu_263_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="51" filename="add/add.cpp" linenumber="9" name="tmp3" contextFuncName="add" moduleName="add" rtlName="tmp3_fu_269_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="52" filename="add/add.cpp" linenumber="9" name="tmp1" contextFuncName="add" moduleName="add" rtlName="tmp1_fu_274_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="53" filename="add/add.cpp" linenumber="9" name="tmp6" contextFuncName="add" moduleName="add" rtlName="grp_fu_257_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="54" filename="add/add.cpp" linenumber="9" name="tmp8" contextFuncName="add" moduleName="add" rtlName="tmp8_fu_280_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="55" filename="add/add.cpp" linenumber="9" name="tmp7" contextFuncName="add" moduleName="add" rtlName="tmp7_fu_286_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="56" filename="add/add.cpp" linenumber="9" name="tmp5" contextFuncName="add" moduleName="add" rtlName="tmp5_fu_292_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="57" filename="add/add.cpp" linenumber="9" name="tmp" contextFuncName="add" moduleName="add" rtlName="tmp_fu_316_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="58" filename="add/add.cpp" linenumber="9" name="tmp11" contextFuncName="add" moduleName="add" rtlName="tmp11_fu_298_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="12" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="59" filename="add/add.cpp" linenumber="9" name="tmp13" contextFuncName="add" moduleName="add" rtlName="tmp13_fu_304_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="60" filename="add/add.cpp" linenumber="9" name="tmp12" contextFuncName="add" moduleName="add" rtlName="tmp12_fu_310_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="61" filename="add/add.cpp" linenumber="9" name="tmp10" contextFuncName="add" moduleName="add" rtlName="tmp10_fu_320_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="62" filename="add/add.cpp" linenumber="9" name="tmp15" contextFuncName="add" moduleName="add" rtlName="tmp15_fu_324_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="63" filename="add/add.cpp" linenumber="9" name="tmp17" contextFuncName="add" moduleName="add" rtlName="tmp17_fu_330_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="64" filename="add/add.cpp" linenumber="9" name="tmp16" contextFuncName="add" moduleName="add" rtlName="tmp16_fu_336_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="65" filename="add/add.cpp" linenumber="9" name="tmp14" contextFuncName="add" moduleName="add" rtlName="tmp14_fu_342_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="66" filename="add/add.cpp" linenumber="9" name="tmp9" contextFuncName="add" moduleName="add" rtlName="tmp9_fu_348_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
+<item  id="67" filename="add/add.cpp" linenumber="9" name="tmp_1_9" contextFuncName="add" moduleName="add" rtlName="out_V" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="/home/centos/src/vivado-hls"></item>
 </annotationInfo>

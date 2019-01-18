@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fir.cpp" path="/home/centos/src/vivado-hls/fir_chapter2/fir.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="fir_test.cpp" path="/home/centos/src/vivado-hls/fir_chapter2/fir_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

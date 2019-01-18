@@ -12,7 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'add/out' to 'add/out_r' to avoid the conflict with HDL keywords or other object names." projectName="add" solutionName="solution1" date="2018-06-29T14:28:33.030-0500" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a_V_load_2', add/add.cpp:9) on array 'a_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a_V'." projectName="add" solutionName="solution1" date="2019-01-18T16:51:14.860-0600" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

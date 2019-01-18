@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'add'" level="0">
-<item name = "Date">Fri Jun 29 14:28:33 2018
+<item name = "Date">Fri Jan 18 16:51:15 2019
 </item>
-<item name = "Version">2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)</item>
+<item name = "Version">2017.4.op (Build 2193837 on Tue Apr 10 18:25:10 MDT 2018)</item>
 <item name = "Project">add</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020clg484-1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-fsgd2104-3-e-es1</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,14 +15,15 @@
 <section name = "" level="1">
 <item name = "Target clock period (ns)">10.00</item>
 <item name = "Clock uncertainty (ns)">1.25</item>
-<item name = "Estimated clock period (ns)">6.69</item>
+<item name = "Target initiation interval">1</item>
+<item name = "Estimated clock period (ns)">1.89</item>
 </section>
 </item>
 <item name = "Latency (clock cycles)">
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">21, 21, 21, 21, none</column>
+<column name="">5, 5, 5, 5, function</column>
 </table>
 </item>
 <item name = "Detail">
@@ -33,7 +34,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">20, 20, 2, -, -, 10, no</column>
 </table>
 </item>
 </section>
@@ -44,16 +44,16 @@
 
 <section name = "Utilization Estimates" level="0">
 <item name = "Summary"><table name="" hasTotal="1">
-<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 86</column>
-<column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, -, -, -</column>
-<column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 39</column>
-<column name="Register">-, -, 43, -</column>
-<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 149, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 201, -</column>
+<column name="Register">-, -, 39, -, -</column>
+<specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -76,25 +76,54 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_1_fu_89_p2">+, 0, 0, 13, 4, 1</column>
-<column name="tmp_2_fu_101_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_3_fu_107_p2">+, 0, 0, 32, 32, 32</column>
-<column name="exitcond_fu_83_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="grp_fu_257_p2">+, 0, 0, 7, 4, 4</column>
+<column name="out_V">+, 0, 0, 7, 4, 4</column>
+<column name="tmp10_fu_320_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp11_fu_298_p2">+, 0, 0, 12, 4, 4</column>
+<column name="tmp12_fu_310_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp13_fu_304_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp14_fu_342_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp15_fu_324_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp16_fu_336_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp17_fu_330_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp1_fu_274_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp3_fu_269_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp4_fu_263_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp5_fu_292_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp7_fu_286_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp8_fu_280_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp9_fu_348_p2">+, 0, 0, 7, 4, 4</column>
+<column name="tmp_fu_316_p2">+, 0, 0, 7, 4, 4</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 9, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 9, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">21, 4, 1, 4</column>
-<column name="i_reg_72">9, 2, 4, 8</column>
-<column name="storemerge_reg_59">9, 2, 32, 64</column>
+<column name="a_V_address0">33, 6, 4, 24</column>
+<column name="a_V_address1">33, 6, 4, 24</column>
+<column name="ap_NS_fsm">33, 6, 1, 6</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="b_V_address0">33, 6, 4, 24</column>
+<column name="b_V_address1">33, 6, 4, 24</column>
+<column name="reg_243">9, 2, 4, 8</column>
+<column name="reg_248">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">3, 0, 3, 0</column>
-<column name="i_1_reg_116">4, 0, 4, 0</column>
-<column name="i_reg_72">4, 0, 4, 0</column>
-<column name="storemerge_reg_59">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="b_V_load_1_reg_381">4, 0, 4, 0</column>
+<column name="reg_243">4, 0, 4, 0</column>
+<column name="reg_248">4, 0, 4, 0</column>
+<column name="reg_253">4, 0, 4, 0</column>
+<column name="tmp11_reg_456">4, 0, 4, 0</column>
+<column name="tmp12_reg_481">4, 0, 4, 0</column>
+<column name="tmp1_reg_426">4, 0, 4, 0</column>
+<column name="tmp5_reg_451">4, 0, 4, 0</column>
 </table>
 </item>
 </section>
@@ -110,25 +139,33 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, add, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, add, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, add, return value</column>
-<column name="a_address0">out, 4, ap_memory, a, array</column>
-<column name="a_ce0">out, 1, ap_memory, a, array</column>
-<column name="a_q0">in, 32, ap_memory, a, array</column>
-<column name="b_address0">out, 4, ap_memory, b, array</column>
-<column name="b_ce0">out, 1, ap_memory, b, array</column>
-<column name="b_q0">in, 32, ap_memory, b, array</column>
-<column name="out_r">out, 32, ap_vld, out_r, pointer</column>
-<column name="out_r_ap_vld">out, 1, ap_vld, out_r, pointer</column>
+<column name="a_V_address0">out, 4, ap_memory, a_V, array</column>
+<column name="a_V_ce0">out, 1, ap_memory, a_V, array</column>
+<column name="a_V_q0">in, 4, ap_memory, a_V, array</column>
+<column name="a_V_address1">out, 4, ap_memory, a_V, array</column>
+<column name="a_V_ce1">out, 1, ap_memory, a_V, array</column>
+<column name="a_V_q1">in, 4, ap_memory, a_V, array</column>
+<column name="b_V_address0">out, 4, ap_memory, b_V, array</column>
+<column name="b_V_ce0">out, 1, ap_memory, b_V, array</column>
+<column name="b_V_q0">in, 4, ap_memory, b_V, array</column>
+<column name="b_V_address1">out, 4, ap_memory, b_V, array</column>
+<column name="b_V_ce1">out, 1, ap_memory, b_V, array</column>
+<column name="b_V_q1">in, 4, ap_memory, b_V, array</column>
+<column name="out_V">out, 4, ap_vld, out_V, pointer</column>
+<column name="out_V_ap_vld">out, 1, ap_vld, out_V, pointer</column>
 </table>
 </item>
 </section>
 
 <section name = "Critical Path" level="0">
-<item name = "Max Delay">6.69</item>
+<item name = "Max Delay">1.89</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'a_load', add/add.c:5">load, 2.32, 2.32, -, -, -, -, -, -, &apos;a&apos;, -, -, -, -</column>
-<column name="'tmp_2', add/add.c:5">add, 0.00, 2.32, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'tmp_3', add/add.c:5">add, 4.37, 6.69, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'a_V_load_8', add/add.cpp:9">load, 0.54, 0.54, -, -, -, -, -, -, &apos;a_V&apos;, -, -, -, -</column>
+<column name="'tmp16', add/add.cpp:9">add, 0.34, 0.88, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp14', add/add.cpp:9">add, 0.34, 1.22, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp9', add/add.cpp:9">add, 0.34, 1.56, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_1_9', add/add.cpp:9">add, 0.34, 1.89, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

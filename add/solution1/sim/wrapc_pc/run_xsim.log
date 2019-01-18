@@ -1,45 +1,42 @@
-result = 90
-
-C:\Users\vsananda\work\add\solution1\sim\verilog>call C:/Xilinx/Vivado/2017.4/bin/xelab xil_defaultlib.apatb_add_top glbl -prj add.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile "C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s add -debug wave 
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini".
+-6
+-6
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx/Vivado/2017.4.op/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_add_top glbl -prj add.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s add -debug wave 
-Multi-threading is on. Using 2 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/add/solution1/sim/verilog/glbl.v" into library work
+Running: /opt/Xilinx/Vivado/2017.4.op/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_add_top glbl -prj add.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile /opt/Xilinx/Vivado/2017.4.op/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s add -debug wave 
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/centos/src/vivado-hls/add/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/add/solution1/sim/verilog/add.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/centos/src/vivado-hls/add/solution1/sim/verilog/add.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_add_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/add/solution1/sim/verilog/add.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/centos/src/vivado-hls/add/solution1/sim/verilog/AESL_automem_a_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/centos/src/vivado-hls/add/solution1/sim/verilog/AESL_automem_b_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/centos/src/vivado-hls/add/solution1/sim/verilog/add.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module add
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/add/solution1/sim/verilog/AESL_automem_a.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_a
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/add/solution1/sim/verilog/AESL_automem_b.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_b
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.add
-Compiling module xil_defaultlib.AESL_automem_a
-Compiling module xil_defaultlib.AESL_automem_b
+Compiling module xil_defaultlib.AESL_automem_a_V
+Compiling module xil_defaultlib.AESL_automem_b_V
 Compiling module xil_defaultlib.apatb_add_top
 Compiling module work.glbl
 Built simulation snapshot add
 
-****** Webtalk v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+****** Webtalk v2017.4.op (64-bit)
+  **** SW Build 2193837 on Tue Apr 10 18:06:59 MDT 2018
+  **** IP Build 2189296 on Tue Apr 10 19:39:46 MDT 2018
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/vsananda/work/add/solution1/sim/verilog/xsim.dir/add/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:01:09 . Memory (MB): peak = 53.309 ; gain = 1.277
-INFO: [Common 17-206] Exiting Webtalk at Fri Jun 29 14:30:50 2018...
+source /home/centos/src/vivado-hls/add/solution1/sim/verilog/xsim.dir/add/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan 18 16:52:22 2019...
 
-****** xsim v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+****** xsim v2017.4.op (64-bit)
+  **** SW Build 2193837 on Tue Apr 10 18:06:59 MDT 2018
+  **** IP Build 2189296 on Tue Apr 10 19:39:46 MDT 2018
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source xsim.dir/add/xsim_script.tcl
@@ -51,17 +48,23 @@ source add.tcl
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
 ## set out_group [add_wave_group out(wire) -into $coutputgroup]
-## add_wave /apatb_add_top/AESL_inst_add/out_r_ap_vld -into $out_group -color #ffff00 -radix hex
-## add_wave /apatb_add_top/AESL_inst_add/out_r -into $out_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/out_V_ap_vld -into $out_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/out_V -into $out_group -radix hex
 ## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
 ## set b_group [add_wave_group b(memory) -into $cinputgroup]
-## add_wave /apatb_add_top/AESL_inst_add/b_q0 -into $b_group -radix hex
-## add_wave /apatb_add_top/AESL_inst_add/b_ce0 -into $b_group -color #ffff00 -radix hex
-## add_wave /apatb_add_top/AESL_inst_add/b_address0 -into $b_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/b_V_q1 -into $b_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/b_V_ce1 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/b_V_address1 -into $b_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/b_V_q0 -into $b_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/b_V_ce0 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/b_V_address0 -into $b_group -radix hex
 ## set a_group [add_wave_group a(memory) -into $cinputgroup]
-## add_wave /apatb_add_top/AESL_inst_add/a_q0 -into $a_group -radix hex
-## add_wave /apatb_add_top/AESL_inst_add/a_ce0 -into $a_group -color #ffff00 -radix hex
-## add_wave /apatb_add_top/AESL_inst_add/a_address0 -into $a_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/a_V_q1 -into $a_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/a_V_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/a_V_address1 -into $a_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/a_V_q0 -into $a_group -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/a_V_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/AESL_inst_add/a_V_address0 -into $a_group -radix hex
 ## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
 ## add_wave /apatb_add_top/AESL_inst_add/ap_start -into $blocksiggroup
 ## add_wave /apatb_add_top/AESL_inst_add/ap_done -into $blocksiggroup
@@ -78,22 +81,28 @@ source add.tcl
 ## add_wave /apatb_add_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
 ## add_wave /apatb_add_top/ready_cnt -into $tb_simstatus_group -radix hex
 ## add_wave /apatb_add_top/done_cnt -into $tb_simstatus_group -radix hex
-## add_wave /apatb_add_top/LENGTH_a -into $tb_portdepth_group -radix hex
-## add_wave /apatb_add_top/LENGTH_b -into $tb_portdepth_group -radix hex
-## add_wave /apatb_add_top/LENGTH_out_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_add_top/LENGTH_a_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_add_top/LENGTH_b_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_add_top/LENGTH_out_V -into $tb_portdepth_group -radix hex
 ## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
 ## set tb_out_group [add_wave_group out(wire) -into $tbcoutputgroup]
-## add_wave /apatb_add_top/out_r_ap_vld -into $tb_out_group -color #ffff00 -radix hex
-## add_wave /apatb_add_top/out_r -into $tb_out_group -radix hex
+## add_wave /apatb_add_top/out_V_ap_vld -into $tb_out_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/out_V -into $tb_out_group -radix hex
 ## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
 ## set tb_b_group [add_wave_group b(memory) -into $tbcinputgroup]
-## add_wave /apatb_add_top/b_q0 -into $tb_b_group -radix hex
-## add_wave /apatb_add_top/b_ce0 -into $tb_b_group -color #ffff00 -radix hex
-## add_wave /apatb_add_top/b_address0 -into $tb_b_group -radix hex
+## add_wave /apatb_add_top/b_V_q1 -into $tb_b_group -radix hex
+## add_wave /apatb_add_top/b_V_ce1 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/b_V_address1 -into $tb_b_group -radix hex
+## add_wave /apatb_add_top/b_V_q0 -into $tb_b_group -radix hex
+## add_wave /apatb_add_top/b_V_ce0 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/b_V_address0 -into $tb_b_group -radix hex
 ## set tb_a_group [add_wave_group a(memory) -into $tbcinputgroup]
-## add_wave /apatb_add_top/a_q0 -into $tb_a_group -radix hex
-## add_wave /apatb_add_top/a_ce0 -into $tb_a_group -color #ffff00 -radix hex
-## add_wave /apatb_add_top/a_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_add_top/a_V_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_add_top/a_V_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/a_V_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_add_top/a_V_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_add_top/a_V_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_add_top/a_V_address0 -into $tb_a_group -radix hex
 ## save_wave_config add.wcfg
 ## run all
 ////////////////////////////////////////////////////////////////////////////////////
@@ -103,9 +112,9 @@ source add.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "355000"
+// RTL Simulation : 1 / 1 [100.00%] @ "195000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 395 ns : File "C:/Users/vsananda/work/add/solution1/sim/verilog/add.autotb.v" Line 326
+$finish called at time : 235 ns : File "/home/centos/src/vivado-hls/add/solution1/sim/verilog/add.autotb.v" Line 344
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Jun 29 14:32:07 2018...
-result = 90
+INFO: [Common 17-206] Exiting xsim at Fri Jan 18 16:52:34 2019...
+-6

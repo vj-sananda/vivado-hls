@@ -1,2 +1,6 @@
 *.wdb
-
+*.log
+a.out
+*/*/.autopilot/*
+*/*/*/autowrap/*
+*/*/sim/*
