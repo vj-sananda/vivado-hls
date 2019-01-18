@@ -1,2 +1,0 @@
-loop_pipeline_macbkb
-loop_pipeline
