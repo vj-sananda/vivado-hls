@@ -1,5 +1,7 @@
 ### HLS Pragmas
 
+#### From : Parallel Programming for FPGAs (online), Chapter 2
+
 By default for loops will not be unrolled, control logic
 to go through the for loop 1 iteration at a time.
 
