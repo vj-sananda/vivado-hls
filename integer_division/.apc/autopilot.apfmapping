@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="integer_divide.cpp" path="C:\Users\vsananda\work\vivado-hls\integer_division\integer_divide.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="integer_divide_test.cpp" path="C:\Users\vsananda\work\vivado-hls\integer_division\integer_divide_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

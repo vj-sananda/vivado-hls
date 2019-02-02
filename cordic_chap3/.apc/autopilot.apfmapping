@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cordic.cpp" path="C:\Users\vsananda\work\vivado-hls\cordic_chap3\cordic.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cordic-top.cpp" path="C:\Users\vsananda\work\vivado-hls\cordic_chap3\cordic-top.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
