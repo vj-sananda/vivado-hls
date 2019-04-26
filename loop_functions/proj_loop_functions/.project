@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/vsananda/work/loop_functions/proj_loop_functions/.apc/.src</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/vsananda/work/loop_functions/proj_loop_functions/.apc/.tb</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/vsananda/work/loop_functions/proj_loop_functions/solution1/.tcls</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/loop_functions.c</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/loop_functions/loop_functions.c</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/loop_functions.c</location>
 		</link>
 		<link>
 			<name>testbench/loop_functions_test.c</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/loop_functions/loop_functions_test.c</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/loop_functions_test.c</location>
 		</link>
 		<link>
 			<name>testbench/result.golden.dat</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/loop_functions/result.golden.dat</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/result.golden.dat</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/loop_functions/proj_loop_functions/solution1/solution1.directive</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/loop_functions/proj_loop_functions/solution1/directives.tcl</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/vsananda/work/loop_functions/proj_loop_functions/solution1/script.tcl</location>
+			<location>C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

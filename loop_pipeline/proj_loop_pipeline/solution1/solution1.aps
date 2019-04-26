@@ -5,9 +5,6 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
-    <clockList>
-        <clock default="false" name="default" period="25"/>
-    </clockList>
     <config>
         <schedule model="loop_pipeline"/>
     </config>
@@ -69,5 +66,8 @@
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
         <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
     </libraryList>
+    <clockList>
+        <clock name="default" default="false" period="25"/>
+    </clockList>
 </solution>
 

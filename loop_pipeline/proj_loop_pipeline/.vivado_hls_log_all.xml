@@ -12,7 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'acc' is power-on initialization." projectName="proj_loop_pipeline" solutionName="solution1" date="2018-06-29T16:22:16.134-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc' is power-on initialization." projectName="proj_loop_pipeline" solutionName="solution1" date="2019-04-26T14:57:35.971-0500" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

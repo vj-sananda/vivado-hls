@@ -1,0 +1,151 @@
+
+
+================================================================
+== Vivado HLS Report for 'sub_func'
+================================================================
+* Date:           Fri Apr 26 14:59:37 2019
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        proj_loop_functions
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  25.00|      6.66|        3.13|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|   63|    1|   63|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+--------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  |  Trip  |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  |  Count | Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+--------+----------+
+        |- SUM     |    0|   62|         2|          -|          -| 0 ~ 31 |    no    |
+        +----------+-----+-----+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	2  / true
+
+* FSM state operations: 
+
+ <State 1> : 1.77ns
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%limit_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %limit)"
+ST_1 : Operation 5 [1/1] (1.76ns)   --->   "br label %1" [loop_functions.c:98]
+
+ <State 2> : 2.32ns
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%i = phi i5 [ 0, %0 ], [ %i_1, %2 ]"
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%accum = phi i13 [ 0, %0 ], [ %accum_1, %2 ]"
+ST_2 : Operation 8 [1/1] (1.36ns)   --->   "%exitcond = icmp eq i5 %i, %limit_read" [loop_functions.c:98]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 31, i64 0)"
+ST_2 : Operation 10 [1/1] (1.78ns)   --->   "%i_1 = add i5 %i, 1" [loop_functions.c:98]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [loop_functions.c:98]
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_1 = zext i5 %i to i64" [loop_functions.c:99]
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%I_addr = getelementptr [32 x i8]* %I, i64 0, i64 %tmp_1" [loop_functions.c:99]
+ST_2 : Operation 14 [2/2] (2.32ns)   --->   "%I_load = load i8* %I_addr, align 1" [loop_functions.c:99]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 13> <Depth = 32> <RAM>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [loop_functions.c:102]
+
+ <State 3> : 6.66ns
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str1) nounwind" [loop_functions.c:98]
+ST_3 : Operation 17 [1/2] (2.32ns)   --->   "%I_load = load i8* %I_addr, align 1" [loop_functions.c:99]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 13> <Depth = 32> <RAM>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_2 = sext i8 %I_load to i13" [loop_functions.c:99]
+ST_3 : Operation 19 [1/1] (2.01ns)   --->   "%accum_1 = add i13 %tmp_2, %accum" [loop_functions.c:99]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%O_addr = getelementptr [32 x i13]* %O, i64 0, i64 %tmp_1" [loop_functions.c:100]
+ST_3 : Operation 21 [1/1] (2.32ns)   --->   "store i13 %accum_1, i13* %O_addr, align 2" [loop_functions.c:100]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 13> <Depth = 32> <RAM>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "br label %1" [loop_functions.c:98]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25ns, clock uncertainty: 3.13ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', loop_functions.c:98) [7]  (1.77 ns)
+
+ <State 2>: 2.32ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', loop_functions.c:98) [7]  (0 ns)
+	'getelementptr' operation ('I_addr', loop_functions.c:99) [16]  (0 ns)
+	'load' operation ('I_load', loop_functions.c:99) on array 'I' [17]  (2.32 ns)
+
+ <State 3>: 6.66ns
+The critical path consists of the following:
+	'load' operation ('I_load', loop_functions.c:99) on array 'I' [17]  (2.32 ns)
+	'add' operation ('accum', loop_functions.c:99) [19]  (2.02 ns)
+	'store' operation (loop_functions.c:100) of variable 'accum', loop_functions.c:99 on array 'O' [21]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

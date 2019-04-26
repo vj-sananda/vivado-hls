@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="multi_counter.c" path="C:\Users\vsananda\work\vivado-hls\multi_counter\multi_counter.c"/>
+  </source>
+  <testbench>
+    <originFiles name="multi_counter_test.c" path="C:\Users\vsananda\work\vivado-hls\multi_counter\multi_counter_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,23 +1,23 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Fri Jun 29 16:12:27 -0500 2018
-INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/loop_functions'
-INFO: [HLS 200-10] Opening project 'C:/Users/vsananda/work/loop_functions/proj_loop_functions'.
+INFO: [HLS 200-10] For user 'vsananda' on host 'fsimpc' (Windows NT_amd64 version 6.2) on Fri Apr 26 14:59:31 -0500 2019
+INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/vivado-hls/loop_functions'
+INFO: [HLS 200-10] Opening project 'C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions'.
 INFO: [HLS 200-10] Adding design file 'loop_functions.c' to the project
-INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
 INFO: [HLS 200-10] Adding test bench file 'loop_functions_test.c' to the project
-INFO: [HLS 200-10] Opening solution 'C:/Users/vsananda/work/loop_functions/proj_loop_functions/solution1'.
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/vsananda/work/vivado-hls/loop_functions/proj_loop_functions/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 25ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
 INFO: [HLS 200-10] Analyzing design file 'loop_functions.c' ...
 INFO: [HLS 200-10] Validating synthesis directives ...
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 101.215 ; gain = 45.156
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 101.215 ; gain = 45.156
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 101.914 ; gain = 45.793
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.934 ; gain = 45.813
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 101.254 ; gain = 45.195
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 102.203 ; gain = 46.082
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 101.465 ; gain = 45.406
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 122.410 ; gain = 66.352
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 122.410 ; gain = 66.352
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 102.418 ; gain = 46.297
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 122.703 ; gain = 66.582
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 123.543 ; gain = 67.422
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'loop_functions' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -25,30 +25,30 @@ INFO: [HLS 200-42] -- Implementing module 'sub_func'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 9.084 seconds; current allocated memory: 83.032 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.554 seconds; current allocated memory: 83.114 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.051 seconds; current allocated memory: 83.125 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.056 seconds; current allocated memory: 83.206 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'loop_functions'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.039 seconds; current allocated memory: 83.199 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.052 seconds; current allocated memory: 83.281 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.027 seconds; current allocated memory: 83.248 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.052 seconds; current allocated memory: 83.329 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'sub_func'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'sub_func'.
-INFO: [HLS 200-111]  Elapsed time: 0.054 seconds; current allocated memory: 83.440 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.069 seconds; current allocated memory: 83.506 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'loop_functions'
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -60,9 +60,9 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'loop_functions/xlimit' to 
 INFO: [RTGEN 206-500] Setting interface mode on port 'loop_functions/ylimit' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'loop_functions' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'loop_functions'.
-INFO: [HLS 200-111]  Elapsed time: 0.096 seconds; current allocated memory: 83.668 MB.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 130.016 ; gain = 73.957
+INFO: [HLS 200-111]  Elapsed time: 0.136 seconds; current allocated memory: 83.734 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 131.906 ; gain = 75.785
 INFO: [SYSC 207-301] Generating SystemC RTL for loop_functions.
 INFO: [VHDL 208-304] Generating VHDL RTL for loop_functions.
 INFO: [VLOG 209-307] Generating Verilog RTL for loop_functions.
-INFO: [HLS 200-112] Total elapsed time: 10.192 seconds; peak allocated memory: 83.668 MB.
+INFO: [HLS 200-112] Total elapsed time: 7.808 seconds; peak allocated memory: 83.734 MB.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/vsananda/work/vivado-hls/multi_counter/solution1/cosim.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/vsananda/work/vivado-hls/multi_counter/solution1/cosim.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="multi_counter" solutionName="solution1" date="2019-04-26T16:00:46.586-0500"/>
+        <logs message="ERROR: [COSIM 212-366] Cannot delete directory  'sim/verilog': it is being used by another program. Please close the program and try again.&#xD;&#xA;error deleting &quot;sim/verilog&quot;: permission denied" projectName="multi_counter" solutionName="solution1" date="2019-04-26T16:00:46.421-0500"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path consists of the following:&#xD;&#xA;&#x9;'load' operation ('CNT_load_1', multi_counter/multi_counter.c:15) on array 'CNT' (1.68 ns)&#xD;&#xA;&#x9;'add' operation ('tmp_5', multi_counter/multi_counter.c:15) (2.55 ns)&#xD;&#xA;&#x9;'store' operation (multi_counter/multi_counter.c:15) of variable 'tmp_5', multi_counter/multi_counter.c:15 on array 'CNT' (1.68 ns)" projectName="multi_counter" solutionName="solution1" date="2019-04-26T15:59:35.880-0500" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (5.916ns) exceeds the target (target clock period: 3ns, clock uncertainty: 0.375ns, effective delay budget: 2.625ns)." projectName="multi_counter" solutionName="solution1" date="2019-04-26T15:59:35.867-0500" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation (multi_counter/multi_counter.c:15) of variable 'tmp_5', multi_counter/multi_counter.c:15 on array 'CNT' and 'load' operation ('CNT_load_1', multi_counter/multi_counter.c:15) on array 'CNT'." projectName="multi_counter" solutionName="solution1" date="2019-04-26T15:59:35.851-0500" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation (multi_counter/multi_counter.c:15) of variable 'tmp_5', multi_counter/multi_counter.c:15 on array 'CNT' and 'load' operation ('CNT_load_1', multi_counter/multi_counter.c:15) on array 'CNT'." projectName="multi_counter" solutionName="solution1" date="2019-04-26T15:59:35.842-0500" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'multi_counter/out' to 'multi_counter/out_r' to avoid the conflict with HDL keywords or other object names." projectName="multi_counter" solutionName="solution1" date="2019-04-26T15:59:35.790-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

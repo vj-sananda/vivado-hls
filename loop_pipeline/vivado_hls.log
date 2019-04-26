@@ -1,156 +1,52 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Fri Jun 29 16:22:27 -0500 2018
-INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/loop_pipeline'
-INFO: [HLS 200-10] Opening project 'C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline'.
-INFO: [HLS 200-10] Opening solution 'C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1'.
+INFO: [HLS 200-10] For user 'vsananda' on host 'fsimpc' (Windows NT_amd64 version 6.2) on Fri Apr 26 14:57:27 -0500 2019
+INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/vivado-hls/loop_pipeline'
+INFO: [HLS 200-10] Opening project 'C:/Users/vsananda/work/vivado-hls/loop_pipeline/proj_loop_pipeline'.
+INFO: [HLS 200-10] Adding design file 'loop_pipeline.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'loop_pipeline_test.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/vsananda/work/vivado-hls/loop_pipeline/proj_loop_pipeline/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 25ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "C:/Xilinx/Vivado/2017.4/msys/bin/g++.exe"
-   Compiling apatb_loop_pipeline.cpp
-   Compiling (apcc) loop_pipeline.c_pre.c.tb.c
-INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/apcc.exe'
-INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Fri Jun 29 16:22:35 -0500 2018
-INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is apcc_db
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) loop_pipeline_test.c_pre.c.tb.c
-INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/apcc.exe'
-INFO: [HLS 200-10] For user 'vsananda' on host 'win-itn9itidic4' (Windows NT_amd64 version 6.1) on Fri Jun 29 16:22:39 -0500 2018
-INFO: [HLS 200-10] In directory 'C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is apcc_db
-INFO: [APCC 202-1] APCC is done.
-   Generating cosim.tv.exe
-INFO: [COSIM 212-302] Starting C TB testing ... 
-Test passed !
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-323] Starting verilog simulation. 
-INFO: [COSIM 212-15] Starting XSIM ...
-
-C:\Users\vsananda\work\loop_pipeline\proj_loop_pipeline\solution1\sim\verilog>call C:/Xilinx/Vivado/2017.4/bin/xelab xil_defaultlib.apatb_loop_pipeline_top glbl -prj loop_pipeline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile "C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s loop_pipeline -debug wave 
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini".
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_loop_pipeline_top glbl -prj loop_pipeline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s loop_pipeline -debug wave 
-Multi-threading is on. Using 2 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/glbl.v" into library work
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/AESL_automem_A.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_loop_pipeline_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module loop_pipeline
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline_macbkb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module loop_pipeline_macbkb_DSP48_0
-INFO: [VRFC 10-311] analyzing module loop_pipeline_macbkb
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.loop_pipeline_macbkb_DSP48_0
-Compiling module xil_defaultlib.loop_pipeline_macbkb(ID=1,NUM_ST...
-Compiling module xil_defaultlib.loop_pipeline
-Compiling module xil_defaultlib.AESL_automem_A
-Compiling module xil_defaultlib.apatb_loop_pipeline_top
-Compiling module work.glbl
-Built simulation snapshot loop_pipeline
-
-****** Webtalk v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/xsim.dir/loop_pipeline/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:01:09 . Memory (MB): peak = 53.070 ; gain = 1.238
-INFO: [Common 17-206] Exiting Webtalk at Fri Jun 29 16:23:59 2018...
-
-****** xsim v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source xsim.dir/loop_pipeline/xsim_script.tcl
-# xsim {loop_pipeline} -autoloadwcfg -tclbatch {loop_pipeline.tcl}
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source loop_pipeline.tcl
-## log_wave -r /
-## set designtopgroup [add_wave_group "Design Top Signals"]
-## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
-## set return_group [add_wave_group return(wire) -into $coutputgroup]
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_return -into $return_group -radix hex
-## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
-## set A_group [add_wave_group A(memory) -into $cinputgroup]
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/A_q0 -into $A_group -radix hex
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/A_ce0 -into $A_group -color #ffff00 -radix hex
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/A_address0 -into $A_group -radix hex
-## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_start -into $blocksiggroup
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_done -into $blocksiggroup
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_idle -into $blocksiggroup
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_ready -into $blocksiggroup
-## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_rst -into $resetgroup
-## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
-## add_wave /apatb_loop_pipeline_top/AESL_inst_loop_pipeline/ap_clk -into $clockgroup
-## set testbenchgroup [add_wave_group "Test Bench Signals"]
-## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
-## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
-## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
-## add_wave /apatb_loop_pipeline_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
-## add_wave /apatb_loop_pipeline_top/ready_cnt -into $tb_simstatus_group -radix hex
-## add_wave /apatb_loop_pipeline_top/done_cnt -into $tb_simstatus_group -radix hex
-## add_wave /apatb_loop_pipeline_top/LENGTH_A -into $tb_portdepth_group -radix hex
-## add_wave /apatb_loop_pipeline_top/LENGTH_ap_return -into $tb_portdepth_group -radix hex
-## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
-## set tb_return_group [add_wave_group return(wire) -into $tbcoutputgroup]
-## add_wave /apatb_loop_pipeline_top/ap_return -into $tb_return_group -radix hex
-## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
-## set tb_A_group [add_wave_group A(memory) -into $tbcinputgroup]
-## add_wave /apatb_loop_pipeline_top/A_q0 -into $tb_A_group -radix hex
-## add_wave /apatb_loop_pipeline_top/A_ce0 -into $tb_A_group -color #ffff00 -radix hex
-## add_wave /apatb_loop_pipeline_top/A_address0 -into $tb_A_group -radix hex
-## save_wave_config loop_pipeline.wcfg
-## run all
-////////////////////////////////////////////////////////////////////////////////////
-// Inter-Transaction Progress: Completed Transaction / Total Transaction
-// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
-//
-// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
-////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 20 [0.00%] @ "163000"
-// RTL Simulation : 1 / 20 [100.00%] @ "10263000"
-// RTL Simulation : 2 / 20 [100.00%] @ "20338000"
-// RTL Simulation : 3 / 20 [100.00%] @ "30413000"
-// RTL Simulation : 4 / 20 [100.00%] @ "40488000"
-// RTL Simulation : 5 / 20 [100.00%] @ "50563000"
-// RTL Simulation : 6 / 20 [100.00%] @ "60638000"
-// RTL Simulation : 7 / 20 [100.00%] @ "70713000"
-// RTL Simulation : 8 / 20 [100.00%] @ "80788000"
-// RTL Simulation : 9 / 20 [100.00%] @ "90863000"
-// RTL Simulation : 10 / 20 [100.00%] @ "100938000"
-// RTL Simulation : 11 / 20 [100.00%] @ "111013000"
-// RTL Simulation : 12 / 20 [100.00%] @ "121088000"
-// RTL Simulation : 13 / 20 [100.00%] @ "131163000"
-// RTL Simulation : 14 / 20 [100.00%] @ "141238000"
-// RTL Simulation : 15 / 20 [100.00%] @ "151313000"
-// RTL Simulation : 16 / 20 [100.00%] @ "161388000"
-// RTL Simulation : 17 / 20 [100.00%] @ "171463000"
-// RTL Simulation : 18 / 20 [100.00%] @ "181538000"
-// RTL Simulation : 19 / 20 [100.00%] @ "191613000"
-// RTL Simulation : 20 / 20 [100.00%] @ "201688000"
-////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 201787500 ps : File "C:/Users/vsananda/work/loop_pipeline/proj_loop_pipeline/solution1/sim/verilog/loop_pipeline.autotb.v" Line 254
-## quit
-INFO: [Common 17-206] Exiting xsim at Fri Jun 29 16:25:15 2018...
-INFO: [COSIM 212-316] Starting C post checking ...
-Test passed !
-INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-10] Analyzing design file 'loop_pipeline.c' ...
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 102.094 ; gain = 46.332
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 102.113 ; gain = 46.352
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 102.113 ; gain = 46.352
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 102.594 ; gain = 46.832
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 123.227 ; gain = 67.465
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_I' (loop_pipeline.c:99:31) in function 'loop_pipeline'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 123.309 ; gain = 67.547
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loop_pipeline' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loop_pipeline'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_I_LOOP_J'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.375 seconds; current allocated memory: 73.740 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 73.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loop_pipeline'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'loop_pipeline/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'loop_pipeline' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'acc' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'loop_pipeline_mac_muladd_5s_5ns_20ns_20_1_1' to 'loop_pipeline_macbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'loop_pipeline_macbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'loop_pipeline'.
+INFO: [HLS 200-111]  Elapsed time: 0.101 seconds; current allocated memory: 74.187 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 123.309 ; gain = 67.547
+INFO: [SYSC 207-301] Generating SystemC RTL for loop_pipeline.
+INFO: [VHDL 208-304] Generating VHDL RTL for loop_pipeline.
+INFO: [VLOG 209-307] Generating Verilog RTL for loop_pipeline.
+INFO: [HLS 200-112] Total elapsed time: 9.463 seconds; peak allocated memory: 74.187 MB.

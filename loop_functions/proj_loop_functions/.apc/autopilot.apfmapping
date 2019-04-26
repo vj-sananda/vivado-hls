@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="loop_functions.c" path="C:\Users\vsananda\work\loop_functions\loop_functions.c"/>
+    <originFiles name="loop_functions.c" path="C:\Users\vsananda\work\vivado-hls\loop_functions\loop_functions.c"/>
   </source>
   <testbench>
-    <originFiles name="result.golden.dat" path="C:\Users\vsananda\work\loop_functions\result.golden.dat"/>
-    <originFiles name="loop_functions_test.c" path="C:\Users\vsananda\work\loop_functions\loop_functions_test.c"/>
+    <originFiles name="loop_functions_test.c" path="C:\Users\vsananda\work\vivado-hls\loop_functions\loop_functions_test.c"/>
+    <originFiles name="result.golden.dat" path="C:\Users\vsananda\work\vivado-hls\loop_functions\result.golden.dat"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
